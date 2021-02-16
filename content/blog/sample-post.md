@@ -1,7 +1,6 @@
 +++
 date = 2021-02-15T08:00:00Z
 description = "Hi This is a sample post"
-draft = true
 image = ""
 title = "Sample Post"
 
