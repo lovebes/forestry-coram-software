@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
-title = "Coram Software | Home"
+title = "Coram Software | In your presence"
 [[menu.main]]
 URL = "about"
 name = "About"
@@ -29,7 +29,7 @@ google_analitycs_id = "Your ID"
 home = "Home"
 logo = "images/logo.png"
 phone = "+1 714-584-4072"
-theme_color = "#41228e"
+theme_color = "red"
 [params.contact]
 enable = true
 form_action = "#"
