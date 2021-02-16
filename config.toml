@@ -27,7 +27,7 @@ description = "coramsoftware.com is a software agency in Lake Forest, CA"
 email = "kseungjin@gmail.com"
 google_analitycs_id = "Your ID"
 home = "Home"
-logo = "images/logo.png"
+logo = "images/logo.svg"
 phone = "+1 714-584-4072"
 theme_color = "#41228e"
 [params.contact]
