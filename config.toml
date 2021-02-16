@@ -20,7 +20,7 @@ URL = "contact"
 name = "Contact"
 weight = 5
 [params]
-address = ""
+address = "Lake Forest, CA, USA"
 author = "Seungjin Kim"
 copyright = "Copyrighht &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
 description = "coramsoftware.com is a software agency in Lake Forest, CA"
