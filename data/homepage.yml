@@ -62,21 +62,20 @@ service:
   enable: true
   title: Services
   item:
-  - title: UI Design
-    icon: ti-palette
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    highlighted: false
-  - title: UX Design
-    icon: ti-vector
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    highlighted: true
-  - title: Interaction Design
-    icon: ti-panel
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    highlighted: false
+    - title : "Frontend Development"
+      icon : "ti-palette"
+      content : "Using ReactJS, we can work with your idea or product owner to go from requirement to multiple iterated workflow to create the desired frontend result."
+      highlighted : false
+
+    - title : "Fullstack/ Backend Development"
+      icon : "ti-vector"
+      content : "We can team up with your existing development team to augment or build out the backend architecture using Golang / Python / .Net Core / Elixir languages. We specialize in creating cloud-based, microservices architecture to be reliable, maintainable, and scalable, with focus on practical, iterated approaches."
+      highlighted : true
+
+    - title : "Accessibility Certification"
+      icon : "ti-panel"
+      content : "We excel at providing in-depth analysis of your websites, and can fully take the load off your development team by taking the white-glove approach in handling all tasks Accessibility related to meet government requirements, such as CMA 508 Compliance."
+      highlighted : false
 portfolio:
   enable: false
   title: Portfolio
