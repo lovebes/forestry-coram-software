@@ -3,7 +3,9 @@ banner:
   title: Hi! We're <br> Coram <br> Software
 about:
   enable: true
-  content: We create custom software for clients. Let us relieve your stress. Realize that app idea! Solve that gut-wrenching problem. Automate backend business routines by custom software! Meet Accessibility compliance issues.
+  content: We create custom software for clients. Let us relieve your stress. Realize
+    that app idea! Solve that gut-wrenching problem. Automate backend business routines
+    by custom software! Meet Accessibility compliance issues.
   button:
     enable: true
     label: know more
@@ -41,7 +43,7 @@ experience:
     company: THEMEFISHER
     duration: Sep 2014 - Present
 education:
-  enable: true
+  enable: false
   title: Education
   item:
   - title: Marters in UX Design
