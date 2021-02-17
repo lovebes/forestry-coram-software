@@ -16,7 +16,7 @@ work_process:
 
 
 team:
-  enable: true
+  enable: false
   title : "My Team"
   team_member:
     - title : "Jack Schenziwe"
@@ -33,5 +33,5 @@ team:
 
 
 clients_logo_slider:
-  enable : true
+  enable : false
   title : "My Clients"
