@@ -3,6 +3,7 @@ title: "About"
 date: 2019-05-12T12:14:34+06:00
 description: "This is meta description."
 author_image : "images/about/author.jpg"
+author_image_description: "Seungjin on top of Masada on the way to the Dead Sea, Israel"
 ---
 
 Coram Software is founded by yours truly to create software that is built for users. Spanning two startups and one mid-sized corporation, work experience has allowed exposure to tech stacks spanning ReactJS/ NodeJS/ Golang/ Python/ .Net Core, with use of databases in architecture settings involving Lab Information Systems, Data-Intensive Distributed Microservices, and Azure-centric Health Insurance Records.
