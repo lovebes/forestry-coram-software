@@ -12,13 +12,9 @@ URL = "blog"
 name = "Blog"
 weight = 3
 [[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
-weight = 4
-[[menu.main]]
 URL = "contact"
 name = "Contact"
-weight = 5
+weight = 4
 [params]
 address = "Lake Forest, CA, USA"
 author = "Seungjin Kim"
