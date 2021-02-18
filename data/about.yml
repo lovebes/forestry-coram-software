@@ -4,15 +4,15 @@ work_process:
   item:
   - title : "Research and Plan"
     icon : "images/icons/plan.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content : "This is where we work with the client to find a common ground of starting point. We try to get a full end-to-end perspective by research that might bleed into user experience, product design, architecture analysis. Together with the client, we create a plan of execution."
 
   - title : "Design and Develop"
     icon : "images/icons/design.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content : "And then we're off to the races! We iterate on development, where we focus on meeting piecemeal milestones, while in constant communication with the client. Our workflow closely follows that of Basecamp's [Shape Up flow](https://basecamp.com/shapeup)."
 
   - title : "Deliver"
     icon : "images/icons/print.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content : "After constant iterations and communications with the client, this is nothing new - it's the last iteration step, where we do our final delivery to the client. From that point on, we have maintenance period that is included, which will be used in case there are adjustments that is needed, as product begins to be used."
 
 
 team:
