@@ -1,7 +1,7 @@
 +++
 date = 2020-12-31T08:00:00Z
 description = "Eye opener experience and figuring out what customers really want,   instead of shooting in the dark with just a feeling."
-image = ""
+image = "https://images.pexels.com/photos/5324974/pexels-photo-5324974.jpeg?cs=srgb&dl=pexels-anna-shvets-5324974.jpg&fm=jpg"
 title = "Creating a Product: Competitor research"
 
 +++

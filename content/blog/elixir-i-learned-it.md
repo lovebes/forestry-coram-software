@@ -1,7 +1,7 @@
 +++
 date = 2020-12-24T08:00:00Z
 description = "My experience in learning this wonderful language called Elixir."
-image = ""
+image = "https://elixir-lang.org/images/logo/logo.png"
 title = "Elixir: I learned it"
 
 +++
