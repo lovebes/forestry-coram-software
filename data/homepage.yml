@@ -1,11 +1,11 @@
 ---
 banner:
-  title: Hi! We're <br> Coram <br> Software
+  title: Hi! <br> We create <br> web apps
 about:
   enable: true
   content: We create custom software for clients. Let us relieve your stress. Realize
     that app idea! Solve that gut-wrenching problem. Automate backend business routines
-    by custom software! Meet Accessibility compliance issues.
+    by custom software! Let someone else (us) deal with Accessibility compliance.
   button:
     enable: true
     label: know more
