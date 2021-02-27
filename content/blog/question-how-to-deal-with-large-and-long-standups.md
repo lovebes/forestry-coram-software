@@ -1,7 +1,6 @@
 +++
 date = 2021-02-27T08:00:00Z
 description = "One of the most expensive anti-pattern your team can fall into, and how to solve it"
-draft = true
 image = ""
 title = "Question: How to deal with Large and Long Standups"
 
