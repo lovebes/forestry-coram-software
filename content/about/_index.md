@@ -11,3 +11,5 @@ Coram Software is founded by Seungjin Kim to create software that is built for u
 Even so, work experience has allowed exposure to tech stacks spanning ReactJS/ NodeJS/ Golang/ Python/ .Net Core, under architecture settings involving Lab Information Systems (LIS), Data-Intensive Distributed Microservices, and Azure-centric Health Insurance Records.
 
 While working, there was this nagging feeling to create better, which led to Coram Software. The goal of Coram Software is in its name. "Coram" is Latin, which means "in the presence of". We want to create software that is mindful of being in presence of users - with the goal to create products that "just works" for the end users, while producing clean code and architecture to the extent of our skills.
+
+Lastly - sorry about the ads showing on the comments section of the blog posts. Currently Disqus (comment platform used) doesn't allow that unless using their paid service, which is not currently the highest priority right now.
