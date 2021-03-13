@@ -2,7 +2,7 @@
 date = 2020-12-24T08:00:00Z
 description = "If you are a senior in a small team, you are actually a micro-CTO.   A captain of your pirate ship. The master of a dojo. Chief blacksmith."
 image = "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?cs=srgb&dl=pexels-fauxels-3182812.jpg&fm=jpg"
-title = "A Senior developer's role in growth of a junior"
+title = "[Junior Developer Series] A Senior developer's role in growth of a junior"
 
 +++
 Let's jump into what a senior's role is in a team. You got hired because probably of the following skillset:

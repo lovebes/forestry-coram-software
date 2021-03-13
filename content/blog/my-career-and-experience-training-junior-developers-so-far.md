@@ -2,7 +2,7 @@
 date = 2020-12-12T08:00:00Z
 description = "I was a junior developer in 2015. After two startups and now in a   medium sized company - I've got a knack and a soft spot for junior software   developers. My story of this career is untraditional, and I'm thankful for   companies that gave me a chance to work and grow."
 image = "https://images.pexels.com/photos/2733955/pexels-photo-2733955.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-title = "My career and experience training junior developers so far"
+title = "[Junior Developer Series] My career and experience training junior developers so far"
 
 +++
 ## My untraditional path to software engineering
