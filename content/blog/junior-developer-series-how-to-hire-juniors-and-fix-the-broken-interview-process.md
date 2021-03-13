@@ -157,7 +157,7 @@ However, do confront them a bit and see how they react on the points that could 
 Now there might be parts that could be done better/fixed. Ask how the candidate wants to remedy this. Does the candidate want to fix it given the time? Again don't put too much weight on this. If they say they want to fix it, give them time to send it in later - don't let them fix it on the spot. Remember, no-pressure interview. 
 
 Also if the candidate doesn't feel inspired to fix it, don't take that as a dinger! Maybe the candidate is sick of doing coding projects because this is their 10th one. You must try to grab the big picture here.
-#### And while candidate is answering the questions, ask behavioral questions as well
+#### 3. And while candidate is answering the questions, ask behavioral questions as well
 
 I have no qualms with behavior questions but you gotta stop asking ones that people memorize.
 
