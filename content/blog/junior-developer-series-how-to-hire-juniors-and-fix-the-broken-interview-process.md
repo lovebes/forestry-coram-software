@@ -1,7 +1,6 @@
 +++
 date = 2021-03-13T08:00:00Z
 description = "Because you want to give them a shot. Just.. a shot. Just a chance to be somebody. So give them a shot."
-draft = true
 image = ""
 title = "[Junior Developer Series] How to Hire Juniors, and fix the broken Interview Process"
 
