@@ -2,7 +2,7 @@
 date = 2020-12-17T08:00:00Z
 description = "How? Because I got hired in a startup as an associate level   developer. There! That's all there is to this blog. Done. But the amount of   different personalities I met though - now that I can't TL;DR;"
 image = "https://images.pexels.com/photos/4350075/pexels-photo-4350075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-title = "How I ended up being defacto \"onboarder\""
+title = "[Junior Developer Series] How I ended up being defacto \"onboarder\""
 
 +++
 ## Because startup and many hats
