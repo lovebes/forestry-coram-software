@@ -54,6 +54,8 @@ Here are the some of the things I had to design/overcome:
 4. How do people deliver?
 5. Can I somehow track things ordered, delivered real time?
 
+Not only that, I'm creating one of the core sins of startup-building, check if there's demand, and then build. No more "build first and then they will come". But in this case my argument is I am going to dogfood my creation.
+
 ### And here's what I decided so far
 
 First of all, it was amazingly refreshing to design something by myself. No leads or CTO's to consult with. I can choose EVERYTHING by myself. I can over-engineer to my heart's content. Oh yeah no designer either so I can bring my crappy design A-game. And I can choose whatever platform I want, and I chose Elixir + Phoenix.
