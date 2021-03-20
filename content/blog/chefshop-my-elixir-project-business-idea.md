@@ -87,7 +87,6 @@ Let me give you my background just to set the baseline for what I've been throug
 3. .Net core + React
    * I didn't have any C# experience so I was nervous and cautiously brought OOP knowledge from ye-olde cave of archives in my brain, from the yester-years of learning computer science.
    * OOP. Haha. After being in JS / React land, where they tried to enforce functional programming, and being a student of that school of thinking, OOP seemed like too much for me. Too much freedom to do anything and everything. I could see why SOLID principle came to be. With the hindsight of having to learn Elixir, and listening to Alan Kay (who coined the term "object-oriented") and Joe Armstrong (creator of Erlang) talk about [the real meaning behind being "object-oriented"](https://youtu.be/fhOHn9TClXY?t=600), I became lesser of a fan. 
-   * Majority of my time was just trying to trigger IntelliSense to get something that will work typing-wise and get me what I need.
    * Seeing classically trained OOP developers write React was also interesting. I can see how they focused on class-based approach more, and tried to create Service classes, to instatiate them in order to use them for API calls. It really does show the power of paradigms and exposure.
 
 Looking into ReasonML and Flutter, realizing that there might be a day where I won't need to use React / Javascript to build single page applications (SPA)... I think was what prepared my mind for Elixir.
