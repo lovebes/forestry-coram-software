@@ -106,7 +106,7 @@ Elixir on the other hand, is a functional language. Functional languages does no
 While developing this project, here's some benefits of Elixir I came to experience.
 
 1. It is super efficient!
-   * I built, by myself:
+   * I built, by myself, in a matter of 5\~6 months:
      * DB layer code that does simple CRUD per tables, multi-transactional operations, Many-to-many, multi-table insertions
      * Kept migrations of DB
      * Real-time operations based on PubSub technique that are fairly involved
