@@ -54,7 +54,7 @@ Here are the some of the things I had to design/overcome:
 4. How do people deliver?
 5. Can I somehow track things ordered, delivered real time?
 
-Not only that, I'm creating one of the core sins of startup-building, check if there's demand, and then build. No more "build first and then they will come". But in this case my argument is I am going to dogfood my creation. And also it's not like I didn't do the [research](https://coramsoftware.com/blog/creating-a-product-competitor-research/).
+Not only that, I'm creating one of the core sins of startup-building, not checking if there's demand, and only then build. No more "build first and then they will come". But in this case my argument is I am going to dogfood my creation. And also it's not like I didn't do the [research](https://coramsoftware.com/blog/creating-a-product-competitor-research/).
 
 ### And here's what I decided so far
 
@@ -88,7 +88,7 @@ Let me give you my background just to set the baseline for what I've been throug
    * React was a blast, and still is. Although doing it for 4 years now, it seems like there's a peak. But doing it has taught me, nay opened my closed eyes - to doing things functional. That led me to believe perhaps ReasonML (React based on OCaml) is the future, and no more dealing with Javascript. And then Flutter (who used much of React concept into Dart-based mobile app development framework), which I again became a fan-boy, even giving a presentation about it.
 3. .Net core + React
    * I didn't have any C# experience so I was nervous and cautiously brought OOP knowledge from ye-olde cave of archives in my brain, from the yester-years of learning computer science.
-   * OOP. Haha. After being in JS / React land, where they tried to enforce functional programming, and being a student of that school of thinking, OOP seemed like too much for me. Too much freedom to do anything and everything. I could see why SOLID principle came to be. With the hindsight of having to learn Elixir, and listening to Alan Kay (who coined the term "object-oriented") and Joe Armstrong (creator of Erlang) talk about [the real meaning behind being "object-oriented"](https://youtu.be/fhOHn9TClXY?t=600), I became lesser of a fan. 
+   * OOP. Haha. After being in JS / React land, where they tried to enforce functional programming, and being a student of that school of thinking, OOP seemed like too much for me. Too much freedom to do anything and everything. I could see why SOLID principle came to be. With the hindsight of having to learn Elixir, and listening to Alan Kay (who coined the term "object-oriented") and Joe Armstrong (creator of Erlang) talk about [the real meaning behind being "object-oriented"](https://youtu.be/fhOHn9TClXY?t=600), I became lesser of a fan.
    * Seeing classically trained OOP developers write React was also interesting. I can see how they focused on class-based approach more, and tried to create Service classes, to instantiate them in order to use them for API calls. It really does show the power of paradigms and exposure.
 
 Looking into ReasonML and Flutter, realizing that there might be a day where I won't need to use React / Javascript to build single page applications (SPA)... I think was what prepared my mind for Elixir.
