@@ -85,8 +85,8 @@ Let me give you my background just to set the baseline for what I've been throug
    * Oh and the syntax. The stupid verbose syntax. That basic stupid baremetal syntax. I know that's not popular opinion, but to a startup who needed to go as fast as possible, being exposed to the inner workings of low-level code layer was just friction all around. But at the inception of the startup, Golang was the best language to get up and going. This was 2017. Not a lot of people heard of Elixir then. Golang is massively effective, training junior developers insanely fast enough to be productive in matter of weeks. Buuuuut BOOM your team grew to 40, and all of a sudden there's brittle verbose code all around you, small scattered microservices powering business and everyday you cross your fingers.. until you have those fresh moments of calmness where you can refactor.
    * React was a blast, and still is. Although doing it for 4 years now, it seems like there's a peak. But doing it has taught me, nay opened my closed eyes - to doing things functional. That led me to believe perhaps ReasonML (React based on OCaml) is the future, and no more dealing with Javascript. And then Flutter (who used much of React concept into Dart-based mobile app development framework), which I again became a fan-boy, even giving a presentation about it.
 3. .Net core + React
-   * I didn't have any C# experience so I was nervous and cautiously brought OOP knowledge from ye-olde cave of archives in my brain, from the yester-years of learning computer science. 
-   * OOP. Haha. After being in JS / React land, where they tried to enforce functional programming, and being a student of that school of thinking, OOP seemed like too much for me. Too much freedom to do anything and everything. I could see why SOLID principle came to be. With the hindsight of having to learn Elixir, and listening to Alan Kay (who coined the term "object-oriented") and Joe Armstrong (creator of Erlang) talk about [the real meaning behind being "object-oriented"](https://youtu.be/fhOHn9TClXY?t=600), I became lesser of a fan. Here's the actual definition of what an object was meant by Alan Kay, via explanation of the language he created, Smalltalk.
+   * I didn't have any C# experience so I was nervous and cautiously brought OOP knowledge from ye-olde cave of archives in my brain, from the yester-years of learning computer science.
+   * OOP. Haha. After being in JS / React land, where they tried to enforce functional programming, and being a student of that school of thinking, OOP seemed like too much for me. Too much freedom to do anything and everything. I could see why SOLID principle came to be. With the hindsight of having to learn Elixir, and listening to Alan Kay (who coined the term "object-oriented") and Joe Armstrong (creator of Erlang) talk about [the real meaning behind being "object-oriented"](https://youtu.be/fhOHn9TClXY?t=600), I became lesser of a fan. 
    * Being a C# noob I kept getting irritated that there're version of libraries that look similar but do things slightly different. There's a .NET version, .NET pre 3.1 version , and a 3.1 version, and now there's gonna be a 5.X version out. But the signature of the classes are slightly different so you have to do things correctly for them to work.
    * Majority of my time was just trying to trigger IntelliSense to get something that will work typing-wise and get me what I need.
    * Seeing classically trained OOP developers write React was also interesting. I can see how they focused on class-based approach more, and tried to create Service classes, to instatiate them in order to use them for API calls. It really does show the power of paradigms and exposure.
@@ -95,7 +95,7 @@ Looking into ReasonML and Flutter, realizing that there might be a day where I w
 
 ### So here I am, with a pretty huge scoped out project and using it to learn Elixir / Phoenix / Ecto
 
-Ecto is Elixir's solution for doing database layer work. It's ORM, but tries not to be in the way of the developer. In that sense it was bare-metal SQL. However it borrowed a lot from Lynx (C#'s way of trying to just plainly use SQL syntax into C#), so you can literally use Elixir to write SQL-esque datastore layer code. 
+Ecto is Elixir's solution for doing database layer work. It's ORM, but tries not to be in the way of the developer. In that sense it was bare-metal SQL. However it borrowed a lot from Lynx (C#'s way of trying to just plainly use SQL syntax into C#), so you can literally use Elixir to write SQL-esque datastore layer code.
 
 Key awesomeness of Elixir is that C# had to change to make Lynx work. Elixir, with its immensely versatile macro system, did not need to. It really shows the power of Elixir, which in turn shows the power of Erlang.
 
@@ -107,7 +107,7 @@ Elixir on the other hand, is a functional language. Functional languages does no
 
 While developing this project, here's some benefits of Elixir I came to experience.
 
-1. It is super efficient! 
+1. It is super efficient!
    * I built, by myself:
      * DB layer code that does simple CRUD per tables, multi-transactional operations, Many-to-many, multi-table insertions
      * Kept migrations of DB
