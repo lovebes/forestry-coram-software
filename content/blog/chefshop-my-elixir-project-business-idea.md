@@ -54,7 +54,7 @@ Here are the some of the things I had to design/overcome:
 4. How do people deliver?
 5. Can I somehow track things ordered, delivered real time?
 
-Not only that, I'm creating one of the core sins of startup-building, check if there's demand, and then build. No more "build first and then they will come". But in this case my argument is I am going to dogfood my creation. And also it's not like I didn't do the [research](https://docs.google.com/document/d/1ZssiThSUGNzHhP7YE7xia0Sug-fIXYsbd3dnHVO9enQ/edit?usp=sharing).
+Not only that, I'm creating one of the core sins of startup-building, check if there's demand, and then build. No more "build first and then they will come". But in this case my argument is I am going to dogfood my creation. And also it's not like I didn't do the .
 
 ### And here's what I decided so far
 
