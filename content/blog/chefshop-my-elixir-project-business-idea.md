@@ -1,7 +1,6 @@
 +++
 date = 2021-03-19T07:00:00Z
 description = "Origin Story: Cottage food business as excuse to learn Elixir"
-draft = true
 image = "/images/pexels-pixabay-301703.jpg"
 title = "[Chefshop] My Elixir Project/Business Idea"
 
@@ -96,4 +95,40 @@ Looking into ReasonML and Flutter, realizing that there might be a day where I w
 
 ### So here I am, with a pretty huge scoped out project and using it to learn Elixir / Phoenix / Ecto
 
-Ecto is Elixir's solution for doing database 
+Ecto is Elixir's solution for doing database layer work. It's ORM, but tries not to be in the way of the developer. In that sense it was bare-metal SQL. However it borrowed a lot from Lynx (C#'s way of trying to just plainly use SQL syntax into C#), so you can literally use Elixir to write SQL-esque datastore layer code. 
+
+Key awesomeness of Elixir is that C# had to change to make Lynx work. Elixir, with its immensely versatile macro system, did not need to. It really shows the power of Elixir, which in turn shows the power of Erlang.
+
+Also, Elixir is a functional language. It doesn't maintain state. In OOP, and also Golang in some form, you instantiate a class  or a struct. And then that instantiated .. thing.. has the data as the first-class citizen. AND, it has functions with it so you can run functions on the data. This creates state. State is hard because when in distributed computing, the fact that you have states mean you are going to have to share memory references to those states. That creates concurrency / dependency issues - the discussion of which is by itself a huge topic so I won't touch here.
+
+Elixir on the other hand, is a functional language. Functional languages does not maintain state. Nor are data the first class citizen. Since there is no state, logic is simpler. You get data, run operations on data, and then push out updated data. No storing into an instantiated class or struct.
+
+### Benefits of Elixir I come across
+
+While developing this project, here's some benefits of Elixir I came to experience.
+
+1. It is super efficient! 
+   * I built, by myself:
+     * DB layer code that does simple CRUD per tables, multi-transactional operations, Many-to-many, multi-table insertions
+     * Kept migrations of DB
+     * Real-time operations based on PubSub technique that are fairly involved
+     * Single Page App without using Javascript/React
+2. Unit tests are a breeze and sooooo fast
+   * Since there're no states, you can literally take cut sections of the business code, and then create tests around it so easily.
+   * The tests are run so fast
+   * In Golang/.net core - trying to create DB-using unit tests are really involved. In Elixir, no problem at all!
+     * So much plumbing is done for you with the help of "mix", the tool which helps maintain / test / release Elixir projects.
+3. I'm generally more happier
+   * Elixir syntax is new, and I like things new.
+   * It's also designed to trigger thoughts like the language has my back. Effort to care for other developers shows.
+4. It is super efficient, resource-wise
+   * I've yet to test this because I'm not ready to deploy to the cloud, but I've read how you can host an Elixir project using a very small resource and have no problem scaling your business up until you need to beef it up or create another node!
+   * For large scale businesses that probably would make a pretty big delta in the operations finances.
+5. It's growing in reach
+   1. Nerves is a project that specializes in deploying Elixir in IoT devices, like Raspberry Pi.
+   2. Membrane is trying to bring Elixir into the video streaming pipeline management.
+   3. Nx - the most recent outcome from the creator/maintainers of Elixir - aims to explore the Machine Learning space, by allowing matrix calculations be done by native machine layer (not in pure Elixir) on CPU or GPU.
+
+### In Closing
+
+So yeah, just wanted to share this post of what I've been working on, and why I feel Elixir is continuing to be a game changer for years to come. This would be like the first product of CoramSoftware! Hopefully many more would follow :)
