@@ -37,7 +37,7 @@ Then, another need for myself to start any side gig came into play. Since our fa
 
 Add to that, I found out about the Cottage Food Operations regulation - where I can legally cook approved range of food and sell it. Only caveat is you gotta be delivering them. There's also another set of regulations called ["Microenterprise Home Kitchen Operations"](https://rivcoeh.org/OurServices/Foods/MicroenterpriseHomeKitchenOperations), where you can legally create small restaurants in your resident place, under set of rules. Actually reading through the rules was the first epiphany that they might use something like what I am building.
 
-### Arrogance or Petty pride, I opted to not use Shopify
+### Arrogance or Petty pride, I opted to not use Shopify and just make it
 
 How hard can it be? You list food, and then some sort of form to submit payment info, and some order/delivery management system.
 
