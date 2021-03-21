@@ -54,7 +54,7 @@ Here are the some of the things I had to design/overcome:
 4. How do people deliver?
 5. Can I somehow track things ordered, delivered real time?
 
-Not only that, I'm creating one of the core sins of startup-building, not checking if there's demand, and only then build. No more "build first and then they will come". But in this case my argument is I am going to dogfood my creation. And also it's not like I didn't do the [research]({{< ref "/blog/creating-a-product-competitor-research >}} "research")
+Not only that, I'm creating one of the core sins of startup-building, not checking if there's demand, and only then build. No more "build first and then they will come". But in this case my argument is I am going to dogfood my creation. And also it's not like I didn't do the \[research\]({{< ref "/blog/creating-a-product-competitor-research >}} "research")
 
 ### And here's what I decided so far
 
@@ -112,7 +112,7 @@ While developing this project, here's some benefits of Elixir I came to experien
      * DB layer code that does simple CRUD per tables, multi-transactional operations, Many-to-many, multi-table insertions
      * Kept migrations of DB
      * Real-time operations based on PubSub technique that are fairly involved
-     * Single Page App without using Javascript/React
+     * Single Page App without using ReactJS, and just a bit of JS (AlpineJS)
 2. Unit tests are a breeze and sooooo fast
    * Since there're no states, you can literally take cut sections of the business code, and then create tests around it so easily.
    * The tests are run so fast
