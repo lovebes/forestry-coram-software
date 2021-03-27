@@ -35,7 +35,7 @@ I start out explaining.
 
 No I won't go into the details of Elixir and its main concepts, which are basic core concepts of its underlying language and system, Erlang and the OTP. Please [look](https://elixir-lang.org/getting-started/mix-otp/genserver.html) at [these](https://ferd.ca/the-zen-of-erlang.html) materials if you really want to know, but I will share one video by Saša Jurić who will summarize things very nicely:
 
-{{< youtube [JvBT4XBdoUE](https://www.youtube.com/watch?v=JvBT4XBdoUE&fbclid=IwAR2NKJoVNH_8Atoo3MyN74rtE9Uqrf-oMG0URo8qxOsvnfhXJs-CAmwnJRQ) >}}
+{{< youtube JvBT4XBdoUE >}}
 
 Watch that and let's continue - I'm gonna assume now from now on you kinda know how it works. Just understand what GenServers/Processes are, and how it behaves in Elixir. I'll add in the rest below.
 
