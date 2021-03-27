@@ -2,7 +2,7 @@
 date = 2021-03-27T07:00:00Z
 description = "Processes, PubSub, LiveView, oh my!"
 image = "/images/chefshop_order_delivery_flow.png"
-title = "[Chefshop] Designing an order-to-delivery system"
+title = "Chefshop Designing an order-to-delivery system"
 
 +++
 # Short overview of the Ordering and Delivery system design of ChefShop
