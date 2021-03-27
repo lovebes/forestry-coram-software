@@ -48,7 +48,7 @@ Delivery slots show that during time range X, I can only take Y orders. I can se
 
 Orders and Deliveries have state fields in its concept or schema or columns (at this level of discussion they all mean the same thing - attributes of the concept).
 
-So here're the interactions that should happen:
+### Desired Interactions/Goals of the system
 
 * Order gets created
   * This decrements available time slots count for that time where order is set to deliver.
@@ -65,4 +65,20 @@ So here're the interactions that should happen:
 In addition, some aspects of the business flow are crucial and should be interactive in the browser - as in data should update without refreshing the page. They are:
 
 * Ordering process, time slots selection phase
-  * Because user can be slow, hit the threshold for "latest time to order", 
+  * Because user can be slow, hit the threshold for "latest time to order". But you have to prevent that - so whenever the time slot updates, the ordering view in the web page has to interactively update, without triggering a web refresh.
+* Shop owner has two dashboards that he uses, that has to be interactive and show updated information in "soft real-time" (term in Erlang which means it aims for fault-tolerant, not faultless in its system). So this has to be updated without page refresh.
+
+### How'd you design it in non-Elixir, OOP-based systems approach?
+
+Let's use Golang as the main language, because it's one of the most bare-metal languages I know.
+
+As you see above, there are concepts that has to reliably update based on changes of other concepts. For example, Order state change triggers Delivery / Delivery Time Slot selections. Delivery state changes triggers Delivery Time Slot selections. Time - literally time - also updates Delivery Time Slot selections. 
+
+Then, we have the frontend issue of web pages having to update reliably and near real time whenever these concept updates happen.
+
+There are two ways to build this. Let me explain and their pros/cons:
+
+* Create microservices, and in each of them call other related microservices directly via some communications protocol (REST / gRPC as the most common for internal communications)
+  * Pros: simpler than the approach below, less working pieces
+  * Cons: too interlocked. If those services fail, ripple effect and eventual systems diagnostics/ recovery is not going to be fun. If Order microservice fails, we don't know where it failed - 
+* 
