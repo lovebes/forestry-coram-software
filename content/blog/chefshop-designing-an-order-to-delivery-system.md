@@ -80,5 +80,6 @@ There are two ways to build this. Let me explain and their pros/cons:
 
 * Create microservices, and in each of them call other related microservices directly via some communications protocol (REST / gRPC as the most common for internal communications)
   * Pros: simpler than the approach below, less working pieces
-  * Cons: too interlocked. If those services fail, ripple effect and eventual systems diagnostics/ recovery is not going to be fun. If Order microservice fails, we don't know where it failed - 
-* 
+  * Cons: microservices are doing too much. For example, Order microservice has to do its order processing, while ALSO calling Delivery/DeliverySlots microservice whenever Order's status gets updated. That's gonna be done probably using Golang channels. What if one of them fails? How easy would it be to debug?
+* Use messaging queue systems for broadcasting Order/Delivery events, by leveraging solutions on whichever cloud platform used - MSK/SQS (AWS), PubSub (GCP). Don't use Azure because why would you.
+  * Pros: split responsibility. For example, Order microservice will just process orders, and if it needs to update order status, its endpoint(if REST)/function(if gRCP) will be hit
