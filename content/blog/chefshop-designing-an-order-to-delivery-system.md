@@ -2,12 +2,12 @@
 date = 2021-03-27T07:00:00Z
 description = "Processes, PubSub, LiveView, oh my!"
 image = "/images/chefshop_order_delivery_flow.png"
-title = "Chefshop Designing an order-to-delivery system"
+title = "[Chefshop] Designing an order-to-delivery system"
 
 +++
 # Short overview of the Ordering and Delivery system design of ChefShop
 
-> GASP< why disclose the inner workings of ChefShop?!
+<GASP> why disclose the inner workings of ChefShop?!
 
 First of all, working name. ChefShop is just a codename for the product.
 
@@ -41,7 +41,7 @@ Watch that and let's continue - I'm gonna assume now from now on you kinda know 
 
 ### What it does
 
-Over the flow of a user ordering some food, you will end up creating an Order. Then, the order will somehow turn into a Delivery. Well during cooking and delivering, you know you can handle only a set quote of food. You can't make gazillion tacos when your grill can only make six per hour. So there's the concept of delivery slots. 
+Over the flow of a user ordering some food, you will end up creating an Order. Then, the order will somehow turn into a Delivery. Well during cooking and delivering, you know you can handle only a set quote of food. You can't make gazillion tacos when your grill can only make six per hour. So there's the concept of delivery slots.
 
 Delivery slots show that during time range X, I can only take Y orders. I can set a weekly schedule of time slots and max cap for each time slots. Users who order has to select that. Let's call this **delivery time slots**.
 
@@ -71,11 +71,11 @@ In addition, some aspects of the business flow are crucial and should be interac
 
 Let's use Golang as the main language, because it's one of the most bare-metal languages I know.
 
-As you see above, there are concepts that has to reliably update based on changes of other concepts. For example, Order state change triggers Delivery / Delivery Time Slot selections. Delivery state changes triggers Delivery Time Slot selections. Time - literally time - also updates Delivery Time Slot selections. 
+As you see above, there are concepts that has to reliably update based on changes of other concepts. For example, Order state change triggers Delivery / Delivery Time Slot selections. Delivery state changes triggers Delivery Time Slot selections. Time - literally time - also updates Delivery Time Slot selections.
 
 Then, we have the frontend issue of web pages having to update reliably and near real time whenever these concept updates happen.
 
-There are two ways to build this. 
+There are two ways to build this.
 
 #### Backend design. Let me explain and their pros/cons:
 
@@ -88,7 +88,7 @@ There are two ways to build this.
 
 #### Frontend design's pros/cons:
 
-So for this you have to use SPA (single page application), and probably one of the popular solutions: React/Vue/Angular. 
+So for this you have to use SPA (single page application), and probably one of the popular solutions: React/Vue/Angular.
 
 For the the "real-time" aspect of the data, you need to do either one of the two methods to update the data:
 
@@ -101,7 +101,7 @@ Cons for this is that setting up a reliable websocket connection entails creatin
 
 ### How it is done in Elixir
 
-Hopefully you've seen Saša Jurić's Youtube video shared above so you have an idea of what a process is. 
+Hopefully you've seen Saša Jurić's Youtube video shared above so you have an idea of what a process is.
 
 The base of the discussion revolves around three key aspects of the Erlang/OTP philosophy. Elixir doesn't change it as it is built on top of the core Erlang structure. They are:
 
@@ -151,9 +151,9 @@ Solution to this potential issue is by creating a new PubSub event, which emits 
 A couple benefits arise when we use Elixir to drive this system.
 
 * Decoupled system
-  * Erlang/OTP is fully decoupled in processes - the system makes the path with least amount of friction when you design yourself to make decoupled solutions. 
+  * Erlang/OTP is fully decoupled in processes - the system makes the path with least amount of friction when you design yourself to make decoupled solutions.
 * Inherent message-passing communication
-  * Each processes communicate by messages, and these messages arrive in each other's message queue chronologically, guaranteeing timely delivery. 
+  * Each processes communicate by messages, and these messages arrive in each other's message queue chronologically, guaranteeing timely delivery.
   * We don't have to explicitly design any custom delivery guarantee logic (e.g. backoff) because it is built in to the core of OTP! How cool is that?!
   * In addition, GenServer Processes also come with additional message features like "continue (when you want to guarantee something to be run before taking another message from the queue)", or "terminate (when you want to run something right before process quits/kills)". Again, no need to think about making theses because the framework is already provided by the core OTP layer.
 * Failure is expected - let it fail
