@@ -16,6 +16,7 @@ fields:
   label: description
 pages:
 - content/blog/a-senior-developer-s-role-in-growth-of-a-junior.md
+- content/blog/chefshop-designing-an-order-to-delivery-system.md
 - content/blog/chefshop-my-elixir-project-business-idea.md
 - content/blog/creating-a-product-competitor-research.md
 - content/blog/elixir-i-learned-it.md
