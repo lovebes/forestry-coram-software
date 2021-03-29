@@ -9,6 +9,12 @@ This is a snippet post since I couldn't find this documented clearly.
 
 MyAppWeb.Endpoint.broadcast/3 is a wrapper around PubSub.broadcast.
 
+Why would you need to use the Phoenix.PubSub.broadcast?
+
+Well, because you want to isolate your context layer from your Web side of the code - I'm talking about in Phoenix. This allows for good divide between what is web related and what is business related.
+
+For more information on how to divide / organize Elixir projects, please take a look at [https://medium.com/very-big-things/towards-maintainable-elixir-the-core-and-the-interface-c267f0da43](https://medium.com/very-big-things/towards-maintainable-elixir-the-core-and-the-interface-c267f0da43 "https://medium.com/very-big-things/towards-maintainable-elixir-the-core-and-the-interface-c267f0da43"), post by Saša Jurić.
+
 In order to make them call the same signature so it gets captured by following subscription function signature:
 
       @impl true
@@ -29,7 +35,6 @@ You have to do the following.
 1. First, subscribe.
 
              ChefshopWeb.Endpoint.subscribe("delivery_slots:1")
-             
 2. If this is how it's broadcasted in MyAppWeb.Endpoint.Broadcast:
 
        MyAppWeb.Endpoint.broadcast("delivery_slots:1", "testing", %{test: "data"})
