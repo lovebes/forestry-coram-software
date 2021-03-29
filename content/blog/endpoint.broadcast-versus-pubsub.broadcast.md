@@ -1,8 +1,8 @@
 +++
 date = 2021-03-29T07:00:00Z
 description = "How to make them call exactly the same way so subscriber catches them"
-image = ""
-title = "Endpoint.broadcast versus PubSub.broadcast"
+image = "/images/elixir_logo.jpeg"
+title = "[Elixir Tips] Endpoint.broadcast versus PubSub.broadcast"
 
 +++
 This is a snippet post since I couldn't find this documented clearly.
