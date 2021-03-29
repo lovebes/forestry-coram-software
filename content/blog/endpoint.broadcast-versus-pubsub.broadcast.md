@@ -32,15 +32,13 @@ In order to make them call the same signature so it gets captured by following s
 
 You have to do the following.
 
-1. First, subscribe. For the sake of discussion let's say you have this setup for your LiveView page, listening in on this topic. Hence using ChefshopWeb.Endpoint here:
+1. First, subscribe. For the sake of discussion let's say you have this setup for your LiveView page, listening in on this topic. Hence using MyAppWeb.Endpoint here:
 
-             ChefshopWeb.Endpoint.subscribe("delivery_slots:1")
+             MyAppWeb.Endpoint.subscribe("delivery_slots:1")
 
 Note for doing the same thing in Phoenix.PubSub, this is the way:
 
-    
-              Phoenix.PubSub.subscribe(Chefshop.PubSub, "delivery_slots:1")
-    
+              Phoenix.PubSub.subscribe(MyApp.PubSub, "delivery_slots:1")
 
 2\. If this is how it's broadcasted in MyAppWeb.Endpoint.Broadcast:
 
