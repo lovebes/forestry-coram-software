@@ -11,7 +11,7 @@ MyAppWeb.Endpoint.broadcast/3 is a wrapper around PubSub.broadcast.
 
 Why would you need to use the Phoenix.PubSub.broadcast?
 
-Well, because you want to isolate your context layer from your Web side of the code - I'm talking about in Phoenix. This allows for good divide between what is web related and what is business related.
+Well, because you want to isolate your context layer from your Web side of the code - I'm talking about in Phoenix. This allows for good divide between what is web related and what is business related. And last weekend was when I realized that I was using MyAppWeb.Endpoint.broadcast() everywhere in my context layer! Aghast!
 
 For more information on how to divide / organize Elixir projects, please take a look at [https://medium.com/very-big-things/towards-maintainable-elixir-the-core-and-the-interface-c267f0da43](https://medium.com/very-big-things/towards-maintainable-elixir-the-core-and-the-interface-c267f0da43 "https://medium.com/very-big-things/towards-maintainable-elixir-the-core-and-the-interface-c267f0da43"), post by Saša Jurić.
 
