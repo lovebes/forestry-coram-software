@@ -32,7 +32,7 @@ In order to make them call the same signature so it gets captured by following s
 
 You have to do the following.
 
-1. First, subscribe.
+1. First, subscribe. For the sake of discussion let's say you have this setup for your LiveView page, listening in on this topic. Hence using ChefshopWeb.Endpoint here:
 
              ChefshopWeb.Endpoint.subscribe("delivery_slots:1")
 2. If this is how it's broadcasted in MyAppWeb.Endpoint.Broadcast:
