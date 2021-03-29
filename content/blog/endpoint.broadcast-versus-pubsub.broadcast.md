@@ -35,10 +35,18 @@ You have to do the following.
 1. First, subscribe. For the sake of discussion let's say you have this setup for your LiveView page, listening in on this topic. Hence using ChefshopWeb.Endpoint here:
 
              ChefshopWeb.Endpoint.subscribe("delivery_slots:1")
-2. If this is how it's broadcasted in MyAppWeb.Endpoint.Broadcast:
+
+Note for doing the same thing in Phoenix.PubSub, this is the way:
+
+    
+              Phoenix.PubSub.subscribe(Chefshop.PubSub, "delivery_slots:1")
+    
+
+2\. If this is how it's broadcasted in MyAppWeb.Endpoint.Broadcast:
 
        MyAppWeb.Endpoint.broadcast("delivery_slots:1", "testing", %{test: "data"})
-3. You have to call it this way when using PubSub.broadcast:
+
+1. You have to call it this way when using PubSub.broadcast:
 
              Phoenix.PubSub.broadcast(MyApp.PubSub, "delivery_slots:1", %Phoenix.Socket.Broadcast{
                topic: "delivery_slots:1",
