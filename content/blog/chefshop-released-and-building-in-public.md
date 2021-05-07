@@ -2,11 +2,11 @@
 date = 2021-04-13T07:00:00Z
 description = "I learned how to release!"
 draft = true
-image = ""
-title = "[Chefshop] Released and building in public"
+image = "/images/pexels-clem-onojeghuo-375889.jpg"
+title = "[Chefshop] Released a build to public url!"
 
 +++
-[https://chefshop.coramsoftware.com](https://chefshop.coramsoftware.com "https://chefshop.coramsoftware.com") (no this is not a marketing post for my blog please don't go read them)
+[https://chefshop.coramsoftware.com](https://chefshop.coramsoftware.com "https://chefshop.coramsoftware.com") 
 
 NOTE: if you are going to play around, please do NOT enter real email / name / addresses!
 
