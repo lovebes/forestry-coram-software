@@ -1,7 +1,6 @@
 +++
 date = 2021-05-07T07:00:00Z
 description = "I suck at design, but now I gotta do it. I open my website, sigh, and close it."
-draft = true
 image = "/images/pexels-picjumbocom-196645.jpg"
 title = "[Chefshop] \"Competition\" Research on Design/UX"
 
