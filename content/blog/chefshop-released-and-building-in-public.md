@@ -1,7 +1,6 @@
 +++
 date = 2021-04-13T07:00:00Z
 description = "I learned how to release!"
-draft = true
 image = "/images/pexels-clem-onojeghuo-375889.jpg"
 title = "[Chefshop] Released a build to public url!"
 
