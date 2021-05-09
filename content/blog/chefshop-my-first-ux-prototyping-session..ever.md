@@ -9,7 +9,7 @@ So following with my last post, I continued looking at into how I'm going to do 
 
 Naturally my kneejerk reaction is do an additive change on top of my current look of the website. Like just spiffying up the current look, tighten the UX...
 
-However my work-memory pulled me out of that default engineer intent. I remember how I worked with my friend the UX designer. How I was amazed at his bravado of making a ton of changes in multiple versions of the app we were building. Not everyone survives through Art Center, it seems. Those who do make it - become exceptional. 
+However my work-memory pulled me out of that default engineer intent. I remember how I worked with my friend the UX designer. How I was amazed at his bravado of making a ton of changes in multiple versions of the app we were building. Not everyone survives through Art Center, it seems. Those who do make it - become exceptional.
 
 Ask me to write 5 different versions of the code behind the app. I would be stressed and pissed off at the management telling me to do so. That's why I'm still learning to be a pro.
 
@@ -17,7 +17,7 @@ Anyways that is what I remembered, and that's what the book [Hello Web Design](h
 
 So I've looked at three sample websites - Chipotle, KFC, El Pollo Loco - and took screenshots. Looked at what could work with my business setting. I was surprised at the inspirations I was getting.
 
-For instance, these are franchises, so there's always the location selection step. Don't need. 
+For instance, these are franchises, so there's always the location selection step. Don't need.
 
 Each menu item has modification steps to modify / sub-select menu items chosen. Sure, it's nice to have, but in the spirit of agile development, I decided to punt that idea. My goal is to do the bare minimum, enough for a customer to see, like, and buy.
 
@@ -41,4 +41,4 @@ I .. I'm gonna stop here. Below picture is what I drew today doing this, and sta
 
 Oh yeah, the book said to go through wireframing, but I think I can go straight to coding because I think I'm okay with CSS. Also, for me it is kind of a wireframing session - I'm just using HTML/CSS instead of Figma or Inkscape, as I don't see too much friction doing so under setting of TailwindCSS + Phoenix.
 
-![My prototyping session](https://i.imgur.com/VCSnS5V.jpg)
+![My prototyping session](https://i.imgur.com/VCSnS5V.jpg)![](https://i.imgur.com/51eVp3I.jpg)
