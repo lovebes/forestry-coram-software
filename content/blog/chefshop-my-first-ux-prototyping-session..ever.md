@@ -41,4 +41,4 @@ I .. I'm gonna stop here. Below picture is what I drew today doing this, and sta
 
 Oh yeah, the book said to go through wireframing, but I think I can go straight to coding because I think I'm okay with CSS. Also, for me it is kind of a wireframing session - I'm just using HTML/CSS instead of Figma or Inkscape, as I don't see too much friction doing so under setting of TailwindCSS + Phoenix.
 
-![My prototyping session](https://i.imgur.com/VCSnS5V.jpg)![](https://i.imgur.com/51eVp3I.jpg)
+![My prototyping session](https://i.imgur.com/GeQ3XG1.jpg)![](https://i.imgur.com/51eVp3I.jpg)
