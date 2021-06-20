@@ -1,7 +1,6 @@
 +++
 date = 2021-06-19T07:00:00Z
 description = "UX is hard. And reworking code retroactively is harder."
-draft = true
 image = "/images/pexels-senne-hoekman-1178498.jpg"
 title = "[Chefshop] WIP: month of UX redesign"
 
