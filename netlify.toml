@@ -9,9 +9,4 @@ HUGO_VERSION = "0.80.0"
 # https://www.netlify.com/docs/continuous-deployment/#deploy-contexts
 # https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-beyond/
 
-[[redirects]]
-  from = "https://chefshop.coramsoftware.com/*"
-  to = "https://35.230.45.9/:splat"
-  status = 301
-  force = true
 
