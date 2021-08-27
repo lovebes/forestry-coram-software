@@ -2,9 +2,10 @@
 date = 2021-08-18T07:00:00Z
 description = "How you fade out flashes for Phoenix LiveView"
 image = "/images/screen-shot-2021-08-18-at-8-47-10-am.png"
-title = "Tip: How to do fade-out flash hiding"
+title = "[Elixir Tip]: How to do fade-out flash hiding in Phoenix LiveView"
 
 +++
+
 This is a short snippet on how to do fade-out on @flash outputs.
 
 Typically you'd do this in a component that has a `fixed` or some absolute positioned css.
