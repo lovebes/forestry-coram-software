@@ -11,11 +11,7 @@ And this is my fork which has updated code to run under most up-to-date Erlang/E
 
 And yes Phoenix 1.6 - `esbuild` and everything.
 
-![](https://github.githubassets.com/favicons/favicon.svg =32x32)[GitHub](https://github.com/lovebes/demo_system)
-
-![](https://opengraph.githubassets.com/49fcde9c607b53f2709149e9d63c613cd43f6b4c496fe45f596865ede6e5aa4e/lovebes/demo_system =690x345)
-
-### [GitHub - lovebes/demo_system](https://github.com/lovebes/demo_system)
+[GitHub - lovebes/demo_system](https://github.com/lovebes/demo_system)
 
 Contribute to lovebes/demo_system development by creating an account on GitHub.
 
@@ -23,7 +19,6 @@ The video: [The Soul of Erlang and Elixir • Saša Jurić • GOTO 2019 - YouTu
 
 Now you can follow along with the video!
 
-  
 Oh and by the way, how he did the graphs? Pure genius. He drew it using SVG! So LiveView updates the DOM, and SVG draws the graph, data populated by assigns… it’s so lean. No D3.js or whatever, just harnessing the power of HTML5 to the max. Super lean.
 
 And the way he used the processes to monitor, tally up stats, and bringing it into LiveView was quite a learning experience. I mean I’m not super experienced in “process flow design” so this was a really an eye opening experience. (Yes I know this was a demo so code might not be super clean). Even then, wow.
