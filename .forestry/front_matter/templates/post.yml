@@ -17,16 +17,23 @@ fields:
 pages:
 - content/blog/a-senior-developer-s-role-in-growth-of-a-junior.md
 - content/blog/chefshop-competition-research-on-design-ux.md
+- content/blog/chefshop-date-selection-ui-update.md
+- content/blog/chefshop-delivery-settings-design-refresh.md
 - content/blog/chefshop-designing-an-order-to-delivery-system.md
+- content/blog/chefshop-email-sending-works.md
 - content/blog/chefshop-my-elixir-project-business-idea.md
 - content/blog/chefshop-my-first-ux-prototyping-session..ever.md
 - content/blog/chefshop-my-second-ux-post-paper-to-code.md
+- content/blog/chefshop-progress-report.md
 - content/blog/chefshop-released-and-building-in-public.md
 - content/blog/chefshop-wip-month-of-ux-redesign.md
 - content/blog/creating-a-product-competitor-research.md
 - content/blog/elixir-i-learned-it.md
+- content/blog/elixirtip-how-to-use-liveview-0.16-with-components-that-have.heex-template-files.md
 - content/blog/endpoint.broadcast-versus-pubsub.broadcast.md
 - content/blog/how-i-ended-up-being-defacto-onboarder.md
 - content/blog/junior-developer-series-how-to-hire-juniors-and-fix-the-broken-interview-process.md
 - content/blog/my-career-and-experience-training-junior-developers-so-far.md
 - content/blog/question-how-to-deal-with-large-and-long-standups.md
+- content/blog/tip-how-to-do-fade-out-flash-hiding.md
+- content/blog/updated-demo-code-from-sasa-juric-s-the-soul-of-erlang-and-elixir-video-for-elixir-1.12-and-phoenix-1.6.md
