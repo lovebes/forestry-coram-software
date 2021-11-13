@@ -28,4 +28,8 @@
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
 
+  {{ "<!--RSS-->" | safeHTML }}
+  <link rel="alternate" type="application/rss+xml" href="{{ `blog/index.xml` | absURL }}" title="CoramSoftware Blog">
+
+
 </head>
