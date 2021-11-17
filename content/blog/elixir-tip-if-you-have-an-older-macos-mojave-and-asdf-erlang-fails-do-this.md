@@ -1,7 +1,6 @@
 +++
 date = 2021-11-16T08:00:00Z
 description = "glu.h Error drove me crazy! Until I learned how to disable wx!!"
-draft = true
 image = "/images/elixir_logo.jpeg"
 title = "[Elixir Tip] If you have an older MacOS (Mojave) and asdf erlang fails, do this"
 
