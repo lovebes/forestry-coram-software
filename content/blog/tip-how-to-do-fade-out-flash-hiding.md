@@ -1,8 +1,8 @@
 +++
 date = 2021-08-18T07:00:00Z
-description = "How you fade out flashes for Phoenix LiveView 0.17!"
+description = "How you fade out flashes for Phoenix LiveView 0.17 + TailwindCSS!"
 image = "/images/screen-shot-2021-08-18-at-8-47-10-am.png"
-title = "[Elixir Tip]: How to do fade-out flash hiding in Phoenix LiveView"
+title = "[Elixir Tip]: Fade-out flash in Phoenix LiveView 0.17 and TailwindCSS"
 
 +++
 This is a short snippet on how to do fade-out on @flash outputs, for Phoenix LiveView 0.17! Yes the latest one, utilizing [Phoenix.LiveView.JS](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.JS.html#content "Phoenix.LiveView.JS") commands.
