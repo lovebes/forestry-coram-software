@@ -55,7 +55,6 @@ end
 defp get_value_at(mapped, {x, y}) do
   Map.get(mapped, {x, y})
 end
-
 ```
 
 Structure of `inverted_dist` is a map with integer as key, and a list of tuples, for example:
