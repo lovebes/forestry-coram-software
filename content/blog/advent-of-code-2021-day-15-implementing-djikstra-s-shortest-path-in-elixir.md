@@ -19,6 +19,7 @@ It works and I got those coveted two stars. Timing results:
 
 [Following is what I see as the slowest (link: same thing but in gist)](https://gist.github.com/lovebes/de57c109217ff87745f9153e25ef65a6#file-part_where_it_is_slowest-ex):
 
+```elixir
     defp get_next_coord(visited_nodes, dist, inverted_dist) do
       inverted_dist
       |> Enum.reduce([], fn {val, coord_list}, acc ->
@@ -54,6 +55,7 @@ It works and I got those coveted two stars. Timing results:
     defp get_value_at(mapped, {x, y}) do
       Map.get(mapped, {x, y})
     end
+```
 
 Structure of `inverted_dist` is a map with integer as key, and a list of tuples, for example:
 `%{4 => [{4, 5}]}`. This is an inverted representation of the distance list, in a [Dijkstra shortest path implementation](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/).
@@ -61,9 +63,3 @@ Structure of `inverted_dist` is a map with integer as key, and a list of tuples,
 Size of `inverted_dist` map, for solving Advent of Code Day 15 challenge Part II, is: 250,000 keys, and values are lists with potentially around < 10 items per list. The map grows its keys as algorithm progresses.
 
 I chose maps as the main data structure because it enables most efficient and good API to work with (reference: [https://www.theerlangelist.com/article/sequences](https://www.theerlangelist.com/article/sequences)).
-
-
-{{ $input := `echo "Hello World!"` }}
-{{ $lang := "bash" }}
-{{ $options := slice "lineNos=table" "style=dracula" }}
-{{ transform.Highlight $input $lang (delimit $options ",") }}
