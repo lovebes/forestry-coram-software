@@ -16,6 +16,7 @@ fields:
   label: description
 pages:
 - content/blog/a-senior-developer-s-role-in-growth-of-a-junior.md
+- content/blog/advent-of-code-2021-day-15-implementing-djikstra-s-shortest-path-in-elixir.md
 - content/blog/chefshop-competition-research-on-design-ux.md
 - content/blog/chefshop-date-selection-ui-update.md
 - content/blog/chefshop-delivery-settings-design-refresh.md
