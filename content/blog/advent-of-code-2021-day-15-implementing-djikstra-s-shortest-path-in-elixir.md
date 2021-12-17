@@ -20,41 +20,42 @@ It works and I got those coveted two stars. Timing results:
 [Following is what I see as the slowest (link: same thing but in gist)](https://gist.github.com/lovebes/de57c109217ff87745f9153e25ef65a6#file-part_where_it_is_slowest-ex):
 
 ```elixir
-    defp get_next_coord(visited_nodes, dist, inverted_dist) do
-      inverted_dist
-      |> Enum.reduce([], fn {val, coord_list}, acc ->
-        filtered_coords =
-          coord_list
-          |> Stream.filter(fn coord -> !get_value_at(visited_nodes, coord) end)
-          |> Enum.sort_by(fn {x, y} -> {x, y} end)
-    
-        case filtered_coords do
-          [] ->
-            acc
-    
-          rest ->
-            updated_pair = {val, rest}
-            [updated_pair | acc]
-        end
-      end)
-      |> get_smallest_inv_dist_coord()
+defp get_next_coord(visited_nodes, dist, inverted_dist) do
+  inverted_dist
+  |> Enum.reduce([], fn {val, coord_list}, acc ->
+    filtered_coords =
+      coord_list
+      |> Stream.filter(fn coord -> !get_value_at(visited_nodes, coord) end)
+      |> Enum.sort_by(fn {x, y} -> {x, y} end)
+
+    case filtered_coords do
+      [] ->
+        acc
+
+      rest ->
+        updated_pair = {val, rest}
+        [updated_pair | acc]
     end
-    
-    defp get_smallest_inv_dist_coord(inverted_dist_in_list) do
-      smallest =
-        inverted_dist_in_list
-        |> Stream.map(fn {val, _coord} -> val end)
-        |> Enum.sort()
-        |> hd
-    
-      Enum.find(inverted_dist_in_list, fn {val, _coord} -> val == smallest end)
-      |> elem(1)
-      |> hd
-    end
-    
-    defp get_value_at(mapped, {x, y}) do
-      Map.get(mapped, {x, y})
-    end
+  end)
+  |> get_smallest_inv_dist_coord()
+end
+
+defp get_smallest_inv_dist_coord(inverted_dist_in_list) do
+  smallest =
+    inverted_dist_in_list
+    |> Stream.map(fn {val, _coord} -> val end)
+    |> Enum.sort()
+    |> hd
+
+  Enum.find(inverted_dist_in_list, fn {val, _coord} -> val == smallest end)
+  |> elem(1)
+  |> hd
+end
+
+defp get_value_at(mapped, {x, y}) do
+  Map.get(mapped, {x, y})
+end
+
 ```
 
 Structure of `inverted_dist` is a map with integer as key, and a list of tuples, for example:
