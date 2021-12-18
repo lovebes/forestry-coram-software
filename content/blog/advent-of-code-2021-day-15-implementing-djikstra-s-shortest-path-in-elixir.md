@@ -83,10 +83,10 @@ And I've forgotten much of Log N notation so I didn't quite sense how it would t
 # Lo and behold, compare the results:
 
 1. With Enum.sort of distance map
-   * Part I: 700ms \~ 1000ms (answer: 720)
-   * Part II: hours (I left it running and slept) (answer: 3025)
+   * Part I: 700ms \~ 1000ms
+   * Part II: hours (I left it running and slept)
 2. With using Pairing Heap (current solution)
-   * Part I: 38.558 ms (answer: 720)
-   * Part II: 1797 ms !!!!!! (answer: 3025)
+   * Part I: 38.558 ms
+   * Part II: 1797 ms !!!!!!
 
 This is the power of algorithms and data structures! It took me three days of learning Dijkstra, implementing said algorithm into Elixir, and then learning about Priority Queues and Pairing Heaps.. but I think I am a bit wiser than three days ago. I feel like I went through a mini-CS course. woah.
