@@ -64,12 +64,9 @@ Size of `inverted_dist` map, for solving Advent of Code Day 15 challenge Part II
 
 I chose maps as the main data structure because it enables most efficient and good API to work with (reference: [https://www.theerlangelist.com/article/sequences](https://www.theerlangelist.com/article/sequences)).
 
+## EDIT: OH. MY. GOSH!!!!!!! I GOT IT TO WORK FASTER!!! ([gist](https://gist.github.com/lovebes/de57c109217ff87745f9153e25ef65a6) is updated with the new solution described below)
 
-
-EDIT: OH. MY. GOSH!!!!!!! I GOT IT TO WORK FASTER!!! ([gist](https://gist.github.com/lovebes/de57c109217ff87745f9153e25ef65a6) is updated with the new solution described below)
-------------------------------------
-
-I was at a point of giving up. Today was going to be day 3 of dealing with this. Since I spend time after work on stuff like this - yeah, it took total of 9~10 hours total figuring it out.
+I was at a point of giving up. Today was going to be day 3 of dealing with this. Since I spend time after work on stuff like this - yeah, it took total of 9\~10 hours total figuring it out.
 
 But I don't know what it is, but I don't really give up on code that easily. At a certain point I wantd to go into [Nx](https://dashbit.co/blog/nx-numerical-elixir-is-now-publicly-available) to see if dropping into bare-bone CPU layer can help me sort faster. Yes, I was desperate!
 
@@ -83,17 +80,13 @@ Pairing Heap was going to be O(logN) for `delete-min` operation (for when removi
 
 And I've forgotten much of Log N notation so I didn't quite sense how it would turn out.
 
-Lo and behold, compare the results:
-=======================
-
+# Lo and behold, compare the results:
 
 1. With Enum.sort of distance map
-  * Part I: 700ms ~ 1000ms (answer: 720)
-  * Part II: hours (I left it running and slept) (answer: 3025)
-
+   * Part I: 700ms \~ 1000ms (answer: 720)
+   * Part II: hours (I left it running and slept) (answer: 3025)
 2. With using Pairing Heap (current solution)
-  * Part I: 38.558 ms (answer: 720)
-  * Part II: 1797 ms !!!!!! (answer: 3025)
+   * Part I: 38.558 ms (answer: 720)
+   * Part II: 1797 ms !!!!!! (answer: 3025)
 
-
-This. This is the power of algorithms! It took me three days of learning Dijkstra, implementing said algorithm into Elixir, and then learning about Priority Queues and Pairing Heaps.. but I think I am a bit wiser than three days ago. I feel like I went through a mini-CS course. woah.
+This is the power of algorithms! It took me three days of learning Dijkstra, implementing said algorithm into Elixir, and then learning about Priority Queues and Pairing Heaps.. but I think I am a bit wiser than three days ago. I feel like I went through a mini-CS course. woah.
