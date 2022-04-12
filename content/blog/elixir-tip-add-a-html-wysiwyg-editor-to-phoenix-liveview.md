@@ -1,7 +1,6 @@
 +++
 date = 2022-04-11T07:00:00Z
 description = "Yeah it's so simple but that's the beauty of it"
-draft = true
 image = "/images/elixir_logo.jpeg"
 title = "[Elixir Tip] Add a HTML Wysiwyg Editor To Phoenix LiveView"
 
