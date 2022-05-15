@@ -1,5 +1,5 @@
-<script type="application/ld+json">
 {{ if eq .Section "blog" }}
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -23,7 +23,9 @@
   "description": {{ .Description | plainify | safeHTML }},
   "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
 }
+</script>
 {{ end }}
+<script type="application/ld+json"></script>
 {
   "@context": "https://schema.org",
   "@type": "Organization",
