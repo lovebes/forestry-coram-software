@@ -4,3 +4,6 @@
 
 ### macOS
 .DS_Store
+
+### lock file
+.hugo_build.lock
