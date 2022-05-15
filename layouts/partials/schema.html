@@ -40,7 +40,8 @@
     "dateModified": {{ .Lastmod }},
     "author": {
         "@type": "Person",
-        "name": {{ .Site.Params.author }}
+        "name": {{ .Site.Params.author }},
+        "url": {{ "about" | absURL }}
     },
     "mainEntityOfPage": { "@type": "WebPage" },
     "publisher": {
