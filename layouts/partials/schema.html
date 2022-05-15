@@ -11,7 +11,11 @@
     {{ range $index, $e := .item }}
         {{ if $index }}, {{ end }}{
         "@type": "Review",
-        "author": {{.name }},
+        "author": {
+            "@type": "Person",
+            "name": {{.name }},
+            "image": {{.image }}
+        },
         "reviewBody": {{.content }},
         "name": {{.job_summary }},
         "reviewRating": {
