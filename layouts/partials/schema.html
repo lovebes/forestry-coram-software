@@ -30,5 +30,25 @@
   "name": {{ .Site.Title }},
   "url": {{ .Section | absURL }},
   "sameAs": []
+  {{ if and .IsHome .Site.Data.homepage.testimonial.enable }}
+  "review": [
+  {{ with .Site.Data.homepage.testimonial }}
+  {{ range $index, $e := .item }}
+    {{ if $index }}, {{ end }}{
+      "@type": "Review",
+      "author": {{.name }},
+      "reviewBody": {{.content }},
+      "name": {{.job_summary }},
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": {{.rating_of_five }},
+        "worstRating": "1"
+      }
+    }
+  {{ end }}
+  {{ end }}
+  ]
+  {{ end }}
 }
 </script>

@@ -84,9 +84,10 @@ testimonial:
   enable: true
   title: Testimonials
   item:
-  - name: Malcolm
+  - name: Malcolm Bowles
     image: images/testimonial/malcolm_bowles_testimonial.jpeg
     designation: Founder, The Alpine Chalet Collaborative
+    job_summary: "Upwork Contract: Short-Term Rental owner seeking API integration for web apps (Hubspot, Stripe, OwnerRez)"
     content: Working with Seungjin was easy and effective. We achieved great results with our project, 
       and the process was simple to navigate. Seungjin took the initiative to dive right in and begin creating solutions to fulfill our contract, 
       and I was impressed with how easily he worked with our partners. For part of the contract, 
@@ -96,7 +97,7 @@ testimonial:
       I would recommend Seungjin for your project—you won't be disappointed. It was a relief to see how autonomously he could work, 
       and we're very grateful for the high quality of work he produced. His attention to detail is excellent, 
       and our solution is truly custom and fits our needs perfectly.
-    rating: ★★★★★
+    rating_of_five: 5
   # - name: Shirley Scot
   #   image: images/testimonial/client-1.png
   #   designation: CEO, Funder
