@@ -1,56 +1,55 @@
-{{ if eq .Section "blog" }}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ .Title }},
-  "image": {{ .Params.featuredImage | absURL }},
-  "datePublished": {{ .PublishDate }},
-  "dateModified": {{ .Lastmod }},
-  "author": {
-    "@type": "Person",
-    "name": {{ .Site.Params.author }}
-  },
-  "mainEntityOfPage": { "@type": "WebPage" },
-   "publisher": {
+[{
+    "@context": "https://schema.org",
     "@type": "Organization",
     "name": {{ .Site.Title }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": {{ .Site.Params.logo }}
+    "url": {{ .Section | absURL }},
+    "sameAs": []
+    {{ if and .IsHome .Site.Data.homepage.testimonial.enable }}
+    , "review": [
+    {{ with .Site.Data.homepage.testimonial }}
+    {{ range $index, $e := .item }}
+        {{ if $index }}, {{ end }}{
+        "@type": "Review",
+        "author": {{.name }},
+        "reviewBody": {{.content }},
+        "name": {{.job_summary }},
+        "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": {{.rating_of_five }},
+            "worstRating": "1"
+        }
+        }
+    {{ end }}
+    {{ end }}
+    ]
+    {{ end }}
     }
-  },
-  "description": {{ .Description | plainify | safeHTML }},
-  "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
-}
-</script>
+{{ if eq .Section "blog" }}
+,{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ .Title }},
+    "image": {{ .Params.featuredImage | absURL }},
+    "datePublished": {{ .PublishDate }},
+    "dateModified": {{ .Lastmod }},
+    "author": {
+        "@type": "Person",
+        "name": {{ .Site.Params.author }}
+    },
+    "mainEntityOfPage": { "@type": "WebPage" },
+    "publisher": {
+        "@type": "Organization",
+        "name": {{ .Site.Title }},
+        "logo": {
+        "@type": "ImageObject",
+        "url": {{ .Site.Params.logo }}
+        }
+    },
+    "description": {{ .Description | plainify | safeHTML }},
+    "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
+    }
 {{ end }}
-<script type="application/ld+json"></script>
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": {{ .Site.Title }},
-  "url": {{ .Section | absURL }},
-  "sameAs": []
-  {{ if and .IsHome .Site.Data.homepage.testimonial.enable }}
-  , "review": [
-  {{ with .Site.Data.homepage.testimonial }}
-  {{ range $index, $e := .item }}
-    {{ if $index }}, {{ end }}{
-      "@type": "Review",
-      "author": {{.name }},
-      "reviewBody": {{.content }},
-      "name": {{.job_summary }},
-      "reviewRating": {
-        "@type": "Rating",
-        "bestRating": "5",
-        "ratingValue": {{.rating_of_five }},
-        "worstRating": "1"
-      }
-    }
-  {{ end }}
-  {{ end }}
-  ]
-  {{ end }}
-}
+]
 </script>
