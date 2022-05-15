@@ -33,4 +33,6 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
+  {{ "<!-- Structured Data -->" | safeHTML }}
+  {{ partial "schema.html" . }}
 </head>
