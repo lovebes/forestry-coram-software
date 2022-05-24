@@ -3,10 +3,14 @@ item:
   - image : "images/portfolio/malcolm_bowles_portfolio_diagram.png"
     project_url : "https://www.upwork.com/ab/f/contracts/29872863#feedback"
     category: "api integration"
+    description: >
+      Client wanted to tasks involving [OwnerRez](https://www.ownerreservations.com/) and [Stripe Identity](https://stripe.com/identity). Client wanted OwnerRez updates on Guest / Booking information (such as editing or creation of new Guest / Booking) to be pushed into HubSpot as Deals and Contacts. Secondly, client wanted the [booking site](https://alpinechalet.co/booking)'s initial flow of verifying user identity via Stripe Identity to flow into OwnerRez's tags for Guest, so that when user verified the identity, a tag of "Verified" would be added to the Guest. Both tasks were done by webhooks feeding into [Pipedream](https://pipedream.com/ "Title"), and writing the necessary code to map and call necessary endpoints to make the data end up in HubSpot and OwnerRez, respectively. Pipedream code was written in NodeJS.
       
   - image : "images/clients-logo/rustic_foods_logo.png"
     project_url : "https://rusticfoods.cc"
     category: "web application"
+    description: >
+      Ongoing project. Rustic Foods is a web application that handles online purchase and fulfillment for [Calfornia's Food Cottage Operation](https://www.cdph.ca.gov/Programs/CEH/DFDCS/Pages/FDBPrograms/FoodSafetyProgram/CottageFoodOperations.aspx). Goal is not only to have customers seamlessly purchase food items, and also have admin process the order and fulfillment on the back office. CoramSoftware was involved from the [initial design](/blog/chefshop-released-and-building-in-public), and still is actively developing the web application. Frontend code to back office - was done in the PETAL Stack, ie. Phoenix, Elixir, TailwindCSS, AlpineJS, and LiveView.
       
   # - image : "images/portfolio/item-3.png"
   #   project_url : "http://examplesite.com"
