@@ -1,6 +1,6 @@
 # portfolio item
 item:
-  - image : "images/clients-logo/malcolm_bowles_logo.png"
+  - image : "images/portfolio/malcolm_bowles_portfolio_diagram.png"
     project_url : "https://www.upwork.com/ab/f/contracts/29872863#feedback"
     category: "api integration"
       
