@@ -72,7 +72,7 @@ Therefore these are the decision topics to build a fitting framework:
   * Integration level testing
     * How to build out so we can test via Docker locally?
 
-This is a series of discussion that will take a whole lot of time amongst the key hires I'll be making as a CTO. The underlying premise is that it should be a team decision, so that people will have a buy-in.
+This is a series of discussions that will take a whole lot of time amongst the key hires I'll be making as a CTO. The underlying premise is that it should be a team decision, so that people will have a buy-in.
 
 You'd think this is necessary time invested so that we choose one and go forth from there, maybe throwing in a prototyping stage where we test out our decisions building out a microservice.
 
