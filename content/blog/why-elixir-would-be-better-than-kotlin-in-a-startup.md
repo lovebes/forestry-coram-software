@@ -1,7 +1,6 @@
 +++
 date = 2022-05-30T07:00:00Z
 description = "If I was a CTO, why I would choose Elixir over Kotlin"
-draft = true
 image = "/images/pexels-ono-kosuki-5973926-1.jpg"
 title = "Why Elixir would be better than Kotlin in a startup"
 
