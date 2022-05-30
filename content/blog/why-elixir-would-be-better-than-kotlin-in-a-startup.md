@@ -58,7 +58,7 @@ Therefore these are the decision topics to build a fitting framework:
     * If ORM, then which one?
   * Database - assumption is we'll use MySQL or PostgresSQL
     * Model representation strategy
-      * JSON? YAML?
+      * JSON? YAML? Why are we using these file formats at all?
       * How to do validation checks, and how does it work with ORM (or not)?
     * Migration/ versioning strategy and tools
 * API layer
