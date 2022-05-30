@@ -10,7 +10,7 @@ title = "Why Elixir would be better than Kotlin in a startup"
 
 And if you wanted to talk about Brex, I wholeheartedly agree with assessments in [that ThinkingElixir podcast](https://thinkingelixir.com/podcast-episodes/061-elixirs-recent-brex-it/). Saying this because Brex switched from Elixir to Kotlin, and it was at one time all-in on Elixir, to the point of [supporting the core Elixir dev team](https://changelog.com/podcast/402) at one point. So I am grateful for Brex to have done so, and sad they moved on.
 
-What I do want to discuss is a though experiment from that idea. Assuming you are a CTO, with the power to choose how the development team will develop, would you choose Elixir versus Kotlin?
+What I do want to discuss is a thought experiment from that idea. Assuming you are a CTO, with the power to choose how the development team will develop, would you choose Elixir versus Kotlin?
 
 Why now? It's been around 10 months since Brex switched over, isn't it too late to throw some shade?
 
