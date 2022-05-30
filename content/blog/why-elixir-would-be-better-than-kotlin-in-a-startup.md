@@ -6,7 +6,7 @@ image = "/images/pexels-ono-kosuki-5973926-1.jpg"
 title = "Why Elixir would be better than Kotlin in a startup"
 
 +++
-First of all - I'm not trying to start a war here.
+**First of all - I'm not trying to start a war here, but to offer my opinions. Naturally they are biased towards Elixir, and limited by my industry experience.**
 
 And if you wanted to talk about Brex, I wholeheartedly agree with assessments in [that ThinkingElixir podcast](https://thinkingelixir.com/podcast-episodes/061-elixirs-recent-brex-it/). Saying this because Brex switched from Elixir to Kotlin, and it was at one time all-in on Elixir, to the point of [supporting the core Elixir dev team](https://changelog.com/podcast/402) at one point. So I am grateful for Brex to have done so, and sad they moved on.
 
@@ -107,7 +107,7 @@ Of course, there are smaller fine-tuning decisions to make, such as:
   * Default is HTTPoison, but lately there are others like Mint, Finch, Tesla
   * For 80% of the cases, HTTPoison works.
 
-However, the driving factor in tweaking any of the underlying libraries is due to the specific niche industry / company domain needs, such as the need to be performant in sending/receiving massively data-intensive calls, or having to [use Elixir in embedded systems](https://www.nerves-project.org/). 
+However, the driving factor in tweaking any of the underlying libraries is due to the specific niche industry / company domain needs, such as the need to be performant in sending/receiving massively data-intensive calls, or having to [use Elixir in embedded systems](https://www.nerves-project.org/).
 
 Core driver of this efficiency is of course the underlying BEAM architecture, where the language and VM is built to use ALL of the CPU core, while make it still relatively simple to program for said multi-core support. Elixir is the thin language on top of it to make the language more Ruby-esque and to also add metaprogramming support.
 
