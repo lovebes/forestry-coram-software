@@ -7,7 +7,7 @@ title = "On Brex: My thoughts on backdrop powers that chose Kotlin over Elixir"
 +++
 I'd like to share my thoughts on what probably most people suspected on why Brex dropped Elixir in favor of Kotlin, as in there was probably more than meets the eye. Below are strictly my thoughts, and they are probably not correct, but I leave it here for your pondering ;)
 
-Nevermind the technical reasons - at this time and age, of Discord and WhatsApp showing the limits of scalability, choosing Kotlin over Elixir for technical reasons, especially after existing code, was something I just couldn't fully understand. There seemed to be a deeper reason, the backdrop pressure which allowed such decisions to take place.
+Nevermind the technical reasons - at this time and age, of Discord and WhatsApp showing the limits of scalability, choosing Kotlin over Elixir for technical reasons, especially after existing Elixir code, was something I just couldn't fully understand. There seemed to be a deeper reason, the backdrop pressure which allowed such decisions to take place.
 
 And that is probably the "toxic" mix of increased pressure from VCs that invested $1.5B, tech leadership not having personal experience scaling an Elixir platform, and the ultimate root of it all - not having product market fit.
 
