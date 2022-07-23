@@ -1,7 +1,6 @@
 +++
 date = 2022-07-23T07:00:00Z
 description = "I couldn't agree on the tech reasons, and thought I'd look deeper into the Brex decision."
-draft = true
 image = "/images/blog_money_bag_yvyqg7cd3.jpg"
 title = "On Brex: My thoughts on backdrop powers that chose Kotlin over Elixir"
 
