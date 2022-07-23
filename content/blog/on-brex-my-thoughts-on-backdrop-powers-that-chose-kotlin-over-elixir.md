@@ -11,7 +11,7 @@ Nevermind the technical reasons - at this time and age, of Discord and WhatsApp 
 
 And that is probably the "toxic" mix of increased pressure from VCs that invested $1.5B, tech leadership not having personal experience scaling an Elixir platform, and the ultimate root of it all - not having product market fit.
 
-Background/Timeline (funding record here: https://www.crunchbase.com/organization/brex/school_financials):
+Background/Timeline (funding record here: [https://www.crunchbase.com/organization/brex/school_financials](https://www.crunchbase.com/organization/brex/school_financials)):
 
 04/01/2017 - Series A investment: $7M
 06/19/2018 - Series B investment: $50M
