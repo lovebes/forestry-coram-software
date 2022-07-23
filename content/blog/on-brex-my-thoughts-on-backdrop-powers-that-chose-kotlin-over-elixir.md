@@ -5,7 +5,7 @@ image = "/images/blog_money_bag_yvyqg7cd3.jpg"
 title = "On Brex: My thoughts on backdrop powers that chose Kotlin over Elixir"
 
 +++
-I'd like to share my thoughts on what probably most people suspected on why Brex dropped Elixir in favor of Kotlin, as in there was probably more than meets the eye. Below is strictly my thoughts, and they are probably not correct, but worth pondering ;)
+I'd like to share my thoughts on what probably most people suspected on why Brex dropped Elixir in favor of Kotlin, as in there was probably more than meets the eye. Below are strictly my thoughts, and they are probably not correct, but I leave it here for your pondering ;)
 
 This hypothesis is probably why the decision to drop Elixir was made. Nevermind the technical reasons - at this time and age, of Discord and WhatsApp showing the limits of scalability, choosing Kotlin over Elixir for technical reasons, especially after existing code, was something I just couldn't fully understand. There seemed to be a deeper reason, the backdrop pressure which allowed such decisions to take place.
 
@@ -36,7 +36,7 @@ Result of all this investment is that Brex has been funded for total of $1.5B(bi
 Brex valuation is at $12.3B.
 
 That's a lot of money, and where is Brex now business-wise?
-[Courtesy of Growjo(free signup)](https://growjo.com/company/Brex#:~:text=Brex%20Revenue%20and%20Competitors&text=Brex's%20current%20valuation%20is%20%2412.3B.), Brex's estimated annual revenue is at $203.2M/yr.
+[Courtesy of Growjo(free signup)](https://growjo.com/company/Brex#:\~:text=Brex%20Revenue%20and%20Competitors&text=Brex's%20current%20valuation%20is%20%2412.3B.), Brex's estimated annual revenue is at $203.2M/yr.
 
 I'm not a business person, so let's do rough math.
 Assuming profit is at 15% of revenue, and define profit as pure profit, after paying COGS, worker salary, etc.
@@ -48,7 +48,7 @@ I know, this is a very rough, and probably incorrect way to assess a company.
 At this point I ask people with a lot more business / corporate / VC company experiences to chime in, but with my 6 years of professional code-monkey life,
 with short stint in a startup as number 4 hire, this is a point where VCs will start to breathe down the company's neck.
 
-Yeah I know, VC's invest with a mindset that some will fail. So each VC's probably invested on 10 other different Brex's. 
+Yeah I know, VC's invest with a mindset that some will fail. So each VC's probably invested on 10 other different Brex's.
 
 But in Brex's point of view, dare I say there is a soul-crushing need to grow and increase revenue.
 Such was probably the reason from 2019 - 2020 of taking in more investment - probably to onboard more startups.
@@ -59,7 +59,7 @@ So to recap, the backdrop of the decision to move to Kotlin had these events hap
 * Onboarding new startups, picking up steam
 * Increased hiring for software developers
 
-During 04/16/2019 ~ 04/26/2021, span of two years of building out their platform, 
+During 04/16/2019 \~ 04/26/2021, span of two years of building out their platform,
 Brex got a total investment of $795M, and went into a hiring spree with that VC money.
 
 Somewhere along that time, tech leaders decided that Kotlin would be a better way forward.
@@ -85,7 +85,7 @@ That would give a jolt of need to rely on things you know the most. And typicall
 
 But there's more to this.
 
-Having the VC money and scaling a product where product-market fit is not there, is probably the business step-sibling of pre-optimization. What could have been apparent early on if one was not VC-backed is the product-market fit. But with VC money, it's hard to see it, as the overshadowing premise becomes "let's throw money on it (and see where we end up)". 
+Having the VC money and scaling a product where product-market fit is not there, is probably the business step-sibling of pre-optimization. What could have been apparent early on if one was not VC-backed is the product-market fit. But with VC money, it's hard to see it, as the overshadowing premise becomes "let's throw money on it (and see where we end up)".
 
 From 2019 to 2021, I'm guessing they tried hard to scale the business.
 
@@ -96,16 +96,15 @@ There's a reason Javascript reigns supreme - its malleability. It's very cheap t
 
 Same goes for Elixir. Functional languages shine in the world of startups, where product-market fit is not yet there.
 
-And yet - for Brex, they pre-optimized for Kotlin, while they had __NO__ product market fit. I emphasize NO because "somewhat of a product market fit" multiplied by $1.5B to repay means "somewhat" equals "NO".
+And yet - for Brex, they pre-optimized for Kotlin, while they had **NO** product market fit. I emphasize NO because "somewhat of a product market fit" multiplied by $1.5B to repay means "somewhat" equals "NO".
 
 Changing production codebase to do something else is not fun. Brex did it for Elixir -> Kotlin, and now they are doing it because of a business pivot.
 
 And who's to say the business pivot is the last pivot they'll make?
 A startup that takes on VC money to the tune of $1.5B to be a fintech platform for other VC-backed startups.. doesn't sound fishy at all.
 
-In situations like this, where there are a lot of unknowns, you actually need a more nimble codebase. 
-You need to use a functional language - a stateless language that lower mental overhead across the board. 
+In situations like this, where there are a lot of unknowns, you actually need a more nimble codebase.
+You need to use a functional language - a stateless language that lower mental overhead across the board.
 Having an OOP slows down implementing business pivots.
 
 It is therefore my assertion that, now - more than ever - Brex needs Elixir.
-
