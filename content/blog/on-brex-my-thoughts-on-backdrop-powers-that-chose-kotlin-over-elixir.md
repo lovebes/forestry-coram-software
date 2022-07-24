@@ -88,8 +88,7 @@ Having the VC money and scaling a product where product-market fit is not there,
 
 From 2019 to 2021, I'm guessing they tried hard to scale the business.
 
-Alas, but their recent decision to drop the small-scale entrepreneurs means the product has not found the fit yet.
-They have pivoted.
+Alas, but their recent decision to drop the small-scale entrepreneurs means the product has not found the fit yet. And in year 2022, they have pivoted.
 
 There's a reason Javascript reigns supreme - its malleability. It's very cheap to build something, and then change it if things don't work out. The energy is minimal to test things out.
 
