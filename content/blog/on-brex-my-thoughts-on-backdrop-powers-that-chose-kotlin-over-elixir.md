@@ -11,26 +11,26 @@ Nevermind the technical reasons - at this time and age, of Discord and WhatsApp 
 
 And that is probably the "toxic" mix of increased pressure from VCs that invested $1.5B, tech leadership not having personal experience scaling an Elixir platform, and the ultimate root of it all - not having product market fit.
 
-Background/Timeline (funding record here: [https://www.crunchbase.com/organization/brex/school_financials](https://www.crunchbase.com/organization/brex/school_financials)):
+**Background/Timeline** (funding record here: [https://www.crunchbase.com/organization/brex/school_financials](https://www.crunchbase.com/organization/brex/school_financials)):
 
-04/01/2017 - Series A investment: $7M
-06/19/2018 - Series B investment: $50M
-10/05/2018 - Series C investment: $125M
-10/05/2018 - [TechCrunch: How the 22-year-old founders of Brex built a billion-dollar business in less than 2 years](https://techcrunch.com/2018/10/05/how-the-22-year-old-founders-of-brex-built-a-billion-dollar-business-in-less-than-2-years/)
-11/15/2019 - [The Start-Up Offering Credit to Other Start-Ups](https://www.nytimes.com/2018/11/15/business/smallbusiness/start-up-brex-offers-credit-to-other-start-ups.html)
-12/04/2018 - [Why Brex Chose Elixir - Medium](https://medium.com/brexeng/why-brex-chose-elixir-fe1a4f313195)
-04/16/2019 - Debt Financing: $100M
-06/11/2019 - Series C investment: $100M
-10/01/2019 - Secondary Market
-12/11/2019 - Debt Financing: $200M
-05/19/2020 - Series C investment: $150M
-01-02/2021 - during my interview I heard Elixir is sunsetting, and will use Kotlin for new services
-04/26/2021 - Series D investment: $425M
-06/23/2021 - [Brex announcement they are moving to Kotlin first](https://medium.com/brexeng/building-backend-services-with-kotlin-7c8410795e4b)
-08/24/2021 - [Thinking Elixir podcast episode about Brex decision](https://thinkingelixir.com/podcast-episodes/061-elixirs-recent-brex-it/)
-10/22/2021 - Series D investment: $300M
-...
-06/21/2022 - [Brex fires small-business customers: The fallout](https://www.protocol.com/newsletters/protocol-fintech/brex-small-business)
+* 04/01/2017 - Series A investment: $7M
+* 06/19/2018 - Series B investment: $50M
+* 10/05/2018 - Series C investment: $125M
+* 10/05/2018 - [TechCrunch: How the 22-year-old founders of Brex built a billion-dollar business in less than 2 years](https://techcrunch.com/2018/10/05/how-the-22-year-old-founders-of-brex-built-a-billion-dollar-business-in-less-than-2-years/)
+* 11/15/2019 - [The Start-Up Offering Credit to Other Start-Ups](https://www.nytimes.com/2018/11/15/business/smallbusiness/start-up-brex-offers-credit-to-other-start-ups.html)
+* 12/04/2018 - [Why Brex Chose Elixir - Medium](https://medium.com/brexeng/why-brex-chose-elixir-fe1a4f313195)
+* 04/16/2019 - Debt Financing: $100M
+* 06/11/2019 - Series C investment: $100M
+* 10/01/2019 - Secondary Market
+* 12/11/2019 - Debt Financing: $200M
+* 05/19/2020 - Series C investment: $150M
+* 01-02/2021 - during my interview I heard Elixir is sunsetting, and will use Kotlin for new services
+* 04/26/2021 - Series D investment: $425M
+* 06/23/2021 - [Brex announcement they are moving to Kotlin first](https://medium.com/brexeng/building-backend-services-with-kotlin-7c8410795e4b)
+* 08/24/2021 - [Thinking Elixir podcast episode about Brex decision](https://thinkingelixir.com/podcast-episodes/061-elixirs-recent-brex-it/)
+* 10/22/2021 - Series D investment: $300M
+* ...
+* 06/21/2022 - [Brex fires small-business customers: The fallout](https://www.protocol.com/newsletters/protocol-fintech/brex-small-business)
 
 Result of all this investment is that Brex has been funded for total of $1.5B(billion) dollars from a total of 11 funding rounds.
 Brex valuation is at $12.3B.
