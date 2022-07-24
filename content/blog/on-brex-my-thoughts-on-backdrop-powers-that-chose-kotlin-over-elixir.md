@@ -70,7 +70,7 @@ What's the delta in that decision? Well, for one thing the target market is more
 
 What comes with a business decision like that is it generally makes the domain design a lot simpler to scope out, code-wise. Therefore, whatever scale-based reasoning that Brex had that made the change to Kotlin no longer is the correct deciding factor.
 
-As you see, it is therefore the fueling of investment capital that might have allowed over-engineering of the platform which might have led to the need to over-hiring and relative scarcity of Elixir developers adding pressure to go to Kotlin.
+As you see, it is therefore the fueling of investment capital that might have allowed over-engineering of the platform which might have led to the need to over-hire. With the relative scarcity of Elixir developers, well then it's an easy push towards choosing Kotlin - especially if the tech leadership has no prior experience in Elixir in such business settings.
 
 When VCs invest around $800M over two years, they are gonna be breathing down the CEO's neck, and yes probably that same pressure for the CTO. New avenues of trying to earn more profit might have led to building more web apps, more things that their platform should be able to do - pretty soon leading to a shot gun approach - of business, and of code products.
 
