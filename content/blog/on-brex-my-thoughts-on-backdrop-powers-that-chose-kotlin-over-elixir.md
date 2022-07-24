@@ -17,11 +17,11 @@ And that is probably the "toxic" mix of increased pressure from VCs that investe
 * 06/19/2018 - Series B investment: $50M
 * 10/05/2018 - Series C investment: $125M
 * 10/05/2018 - [TechCrunch: How the 22-year-old founders of Brex built a billion-dollar business in less than 2 years](https://techcrunch.com/2018/10/05/how-the-22-year-old-founders-of-brex-built-a-billion-dollar-business-in-less-than-2-years/)
-* 11/15/2019 - [The Start-Up Offering Credit to Other Start-Ups](https://www.nytimes.com/2018/11/15/business/smallbusiness/start-up-brex-offers-credit-to-other-start-ups.html)
 * 12/04/2018 - [Why Brex Chose Elixir - Medium](https://medium.com/brexeng/why-brex-chose-elixir-fe1a4f313195)
 * 04/16/2019 - Debt Financing: $100M
 * 06/11/2019 - Series C investment: $100M
 * 10/01/2019 - Secondary Market
+* 11/15/2019 - [The Start-Up Offering Credit to Other Start-Ups](https://www.nytimes.com/2018/11/15/business/smallbusiness/start-up-brex-offers-credit-to-other-start-ups.html)
 * 12/11/2019 - Debt Financing: $200M
 * 05/19/2020 - Series C investment: $150M
 * 01-02/2021 - during my interview I heard Elixir is sunsetting, and will use Kotlin for new services
