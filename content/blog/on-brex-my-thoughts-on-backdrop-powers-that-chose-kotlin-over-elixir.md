@@ -78,7 +78,7 @@ This actually fits Kotlin better at that point. You use prepared library of stuf
 
 Plus perhaps a new VP of Engineering or CTO that doesn't know Elixir might have joined - potentially from the financial sector, a veteran with a track record in growing fintech companies fast and sellable. Quite possibly the only foray into programming languages known to the CTO was based solely on the world of OOP.
 
-Now that CTO probably had no problem with Elixir, if business was chugging along. But no, Brex was gifted with a $800M sledge hammer with pressure to scale up as quick as possible - in business-speak, throw people at the problem level urgency.
+Now that CTO probably had no problem with Elixir, if business was chugging along. But no, Brex was gifted with a $800M sledge hammer with pressure to scale up as quick as possible - in business-speak, "throw people at the problem" level urgency.
 
 That would give a jolt of need to rely on things you know the most. And typically with such settings, new tech is not what you rely on. Something you know inside-and-out, one which you can trust the developers to build. One which you can say you are able to hire off of a fat candidate pipeline.
 
