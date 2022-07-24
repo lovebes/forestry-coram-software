@@ -68,8 +68,7 @@ And then, in about a year - they decide to fire their small-scale business custo
 
 What's the delta in that decision? Well, for one thing the target market is more targeted instead of a haphazard collection of any and all startups who need a business account.
 
-What comes with a business decision like that it generally makes the domain design a lot simpler to scope out, code-wise.
-Therefore, whatever scale-based reasoning that Brex had that made the change to Kotlin no longer is the correct deciding factor.
+What comes with a business decision like that is it generally makes the domain design a lot simpler to scope out, code-wise. Therefore, whatever scale-based reasoning that Brex had that made the change to Kotlin no longer is the correct deciding factor.
 
 As you see, it is therefore the fueling of investment capital that might have allowed over-engineering of the platform which might have led to the need to over-hiring and relative scarcity of Elixir developers adding pressure to go to Kotlin.
 
