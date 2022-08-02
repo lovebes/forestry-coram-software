@@ -17,3 +17,5 @@ Ideas:
 [https://elixirforum.com/t/implementing-a-distributed-users-counter/39609](https://elixirforum.com/t/implementing-a-distributed-users-counter/39609 "https://elixirforum.com/t/implementing-a-distributed-users-counter/39609")
 
 [https://www.youtube.com/watch?v=cVQUPvmmaxQ&ab_channel=CodeSync](https://www.youtube.com/watch?v=cVQUPvmmaxQ&ab_channel=CodeSync "https://www.youtube.com/watch?v=cVQUPvmmaxQ&ab_channel=CodeSync")
+
+Visualization: [https://hexdocs.pm/kino/Kino.Process.html](https://hexdocs.pm/kino/Kino.Process.html "https://hexdocs.pm/kino/Kino.Process.html")
