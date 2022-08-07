@@ -116,7 +116,7 @@ Naturally then you'd also have to have a discussion on how to do DB connection p
 
 Well, what if we don't rely on replicas to scale?
 
-What if we had a highly performant language that can handle massive connections?
+What if we had a highly performant language that can handle massive connections? And just have one replica for one pod as the ingestion service?
 
 Then the ONLY bottleneck becomes the DB connection, which limits the problem drastically.
 
