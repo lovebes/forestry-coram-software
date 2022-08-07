@@ -114,7 +114,7 @@ Naturally then you'd also have to have a discussion on how to do DB connection p
 
 ### So how can we make ingestion simpler and still performant? 
 
-Yep, let's do that as it's the simplest. 
+Well, what if we don't rely on replicas to scale?
 
 What if we had a highly performant language that can handle massive connections?
 
