@@ -1,5 +1,5 @@
 +++
-date = 2022-08-08T07:00:00Z
+date = 2022-08-06T07:00:00Z
 description = ""
 image = "/images/elixir_logo.jpeg"
 title = "[Elixir and Time Series] #1 - Background and Ingestion considerations"
