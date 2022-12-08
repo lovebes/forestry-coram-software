@@ -152,6 +152,17 @@ Boom. Two issues are not really simple to do and will take significant more time
   * In JIRA sizing, this fact by itself is a sizable amount of work.
     * How do you even get the cookies from the request? How would you then add that to the header on the downstream service call?
   * Compare that to Elixir - just grab it from Plug.Conn.fetch_cookies() and then push that into the header for downstream call, made by HTTP client of choice, like HTTPoison.
+* In addition, what about testing?
+  * `@MockkuBean` annotation is useful, but the ergonomics of setting up the tests feels brittle in Spring Boot.
+    * There's a bunch of ceremonies just to get the mocking right. Syntax feels brittle compared to what ExUnit can accomplish.
+
+### Let's talk development mindset.
+
+The world of burgeoning microservices. The friction in trying to even scope out complex business needs seems to have developers reach for creating new services as the solution. Sure, we'll break out these into five different microservices which will solve the business need. We'll have this service feed into the DB while this other service will be in front of the DB, while this other service will be the client. All of the API calls will be documented in a separate contract repo so that we'll version everything. We'll have contract based development because without it this will immediately run into a ball of mud.
+
+Compare that to Elixir services - we think in business domains. One Elixir service can have a GenServer doing ingress work for DB hydration, while taking in client API requests from the frontend, and... that's it. Concurrency allows asynchronous scheduled work to operate completely independent. Even then developers don't have to look at spaghetti code, nor have to worry about dependency hell or common-shared-state hell. Analogy is wrong but yeah, each BEAM process could very well be its own small microservice. Deployment is just this one Elixir microservice, and it's pretty performant.
+
+I don't need to pinpoint which path allows for developer's brain the capacity to think about the business problem, and not so much the puzzle of glueing code together to work. Which path allows for more developer (and DevOps) more peace.
 
 ### Addendum: pre-filtering effect of candidates by just choosing Elixir
 
