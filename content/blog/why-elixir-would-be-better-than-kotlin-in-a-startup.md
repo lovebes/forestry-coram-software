@@ -5,7 +5,6 @@ image = "/images/pexels-ono-kosuki-5973926-1.jpg"
 title = "Why Elixir would be better than Kotlin in a startup"
 
 +++
-
 **First of all - I'm not trying to start a war here, but to offer my opinions. Naturally they are biased towards Elixir, and limited by my industry experience.**
 
 And if you wanted to talk about Brex, I wholeheartedly agree with assessments in [that ThinkingElixir podcast](https://thinkingelixir.com/podcast-episodes/061-elixirs-recent-brex-it/). Saying this because Brex switched from Elixir to Kotlin, and it was at one time all-in on Elixir, to the point of [supporting the core Elixir dev team](https://changelog.com/podcast/402) at one point. So I am grateful for Brex to have done so, and sad they moved on.
@@ -53,6 +52,9 @@ Therefore these are the decision topics to build a fitting framework:
 
 * Tooling
   * Gradle, Maven, Ant, etc
+* Config format
+  * YAML vs application.properties
+    * YAML is exceptionally going to be huge win when config becomes unwieldy, apparently
 * DataSource layer
   * ORM or not
     * If ORM, then which one?
@@ -64,13 +66,18 @@ Therefore these are the decision topics to build a fitting framework:
 * API layer
   * Spring Boot or not?
     * Apparently there's a lot of emotion running on [both](https://stackoverflow.com/questions/56764255/what-are-the-differences-using-spring-boot-with-kotlin-and-with-java#:\~:text=0%20onward%20Kotlin%20has%20first,the%20same%20freedom%20of%20choice.) [sides](https://www.quora.com/What-is-the-worst-problem-in-Spring-Boot)
+    * Also side experience quip: throwing exceptions for non-200 code is just ... weird
   * GraphQL or REST, or both?
     * Because some API protocol layers make it hard to do both
   * APM packages?
+  * JSON parsing
+    * The way to get to a JSON string from a `data class` is just wacky. They say Jackson helps, but no, for LocalTime you gotta add another dependency and instantiate an objectMapper() with a module to get the time format parsed correctly.
+    * Sure, Gson() from Google helps.
 * Testing libraries
   * [There're options](http://www.douevencode.com/articles/2018-01/kotlin-the-best-testing-framework/) and reasons for/against
   * Integration level testing
     * How to build out so we can test via Docker locally?
+  * Mocking
 
 This is a series of discussions that will take a whole lot of time amongst the key hires I'll be making as a CTO. The underlying premise is that it should be a team decision, so that people will have a buy-in.
 
@@ -126,6 +133,25 @@ As a startup, that's what you need. Get things going fast, using tools that allo
 * Why not NodeJS? Well, it's definitely fast, but it's stressful for the developer AND it brings less confidence to withstand the inflection point (single threaded-ness)
 * Same for Ruby, the single-threaded restriction and the Global Interpretation Lock that manages it
   * ...And you'd typically want to use the language and tools that seasoned Ruby on Rails developers have built after reaching the limits of the language.
+
+### Let's talk development speed as well.
+
+So after you get all of the above sorted out, well... now we have to discuss if the development speed is on par with Elixir development.
+
+Let's say your building a slightly customized API endpoint that isn't quite going to work by using Spring Boot's scaffolded annotations.
+
+Let's say frontend makes an API call for obtaining a session, but the endpoint has to actually proxy out the incoming cookies downstream to an authentication service.
+
+And you have to enforce a custom set of CORS.
+
+Boom. Two issues are not really simple to do and will take significant more time in Spring Boot than in Elixir/Phoenix.
+
+* CORS handling is [abominable in Spring Boot](https://spring.io/guides/gs/rest-service-cors/) (just look at the size of this guide)
+  * Compare that to just setting it in one file (Endpoint file) in Elixir.
+* Proxying cookies to downstream services? Spring Boot doesn't have an annotation or any pre-solved solution, so this has to be yet again, built up by having dependencies chained and magic dusted all over to abstract it out.
+  * In JIRA sizing, this fact by itself is a sizable amount of work.
+    * How do you even get the cookies from the request? How would you then add that to the header on the downstream service call?
+  * Compare that to Elixir - just grab it from Plug.Conn.fetch_cookies() and then push that into the header for downstream call, made by HTTP client of choice, like HTTPoison.
 
 ### Addendum: pre-filtering effect of candidates by just choosing Elixir
 
