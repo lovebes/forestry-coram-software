@@ -62,15 +62,15 @@ service:
   enable: true
   title: Services
   item:
-    - title : "Frontend Development"
-      icon : "ti-layout"
-      content : "Using ReactJS, we can work with your idea or product owner to go from requirement to multiple iterated workflow to create the desired frontend result."
-      highlighted : false
+    - title : "Custom AI Solutions"
+      icon : "ti-bolt"
+      content : "Future-proof your business by integrating with customized advanced LLM models. Leveraging open source expertise, we provide transparent and flexible solutions tailored to your unique needs. Our holistic approach ensures that your business can utilize the full potential of AI technology."
+      highlighted : true
 
     - title : "Fullstack/ Backend Development"
       icon : "ti-server"
       content : "We can team up with your existing development team to augment or build out the backend architecture using Golang / Python / .Net Core / Elixir languages. We specialize in creating cloud-based, microservices architecture to be reliable, maintainable, and scalable, with focus on practical, iterated approaches."
-      highlighted : true
+      highlighted : false
 
     - title : "Accessibility Certification"
       icon : "ti-thumb-up"
