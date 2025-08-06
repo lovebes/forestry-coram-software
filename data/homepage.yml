@@ -1,11 +1,9 @@
 ---
 banner:
-  title: Hi! <br> We create <br> web apps
+  title: Custom Software Development <br> &amp; AI Solutions in California
 about:
   enable: true
-  content: We create custom software for clients. Let us relieve your stress. Realize
-    that app idea! Solve that gut-wrenching problem. Automate backend business routines
-    by custom software! Let someone else (us) deal with Accessibility compliance.
+  content: We create software that "just works" for end users, while producing clean code and architecture. From AI solutions to full-stack development and accessibility compliance, we bring joy to the development process using modern technologies like Elixir, Go, and React.
   button:
     enable: true
     label: know more

@@ -1,9 +1,12 @@
-baseURL = "/"
+baseURL = "https://coramsoftware.com"
 languageCode = "en-us"
-summaryLength = "10"
+summaryLength = "20"
 theme = "kross-hugo"
-title = "Coram Software | In your presence"
+title = "Coram Software - Custom Software Development & AI Solutions"
 rssLimit = 50
+paginate = 9
+enableRobotsTXT = true
+canonifyURLs = true
 [[menu.main]]
 URL = "about"
 name = "About"
@@ -23,14 +26,18 @@ weight = 5
 [params]
 address = "Lake Forest, CA, USA"
 author = "Seungjin Kim"
-copyright = "Copyrighht &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
-description = "coramsoftware.com is a software agency in Lake Forest, CA"
+copyright = "Copyright &copy; 2025 Coram Software. All rights reserved."
+description = "Coram Software creates custom software solutions, AI implementations, and full-stack web applications. Expert development services in Elixir, React, Go, and modern technologies for businesses in California and nationwide."
 email = "hello@coramsoftware.com"
 google_analitycs_id = "G-BHT4DCW7JG"
 home = "Home"
 logo = "images/logo.svg"
 phone = "+1 949-797-5588"
 theme_color = "#41228e"
+business_name = "Coram Software"
+business_type = "Software Development Company"
+founding_year = "2020"
+service_areas = ["California", "United States", "Remote"]
 [params.contact]
 enable = false
 form_action = "#"

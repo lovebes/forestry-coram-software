@@ -6,10 +6,57 @@
   <section class="section">
     <div class="container">
       <div class="row">
-        {{ range .Data.Pages }}
+        <div class="col-12 mb-5">
+          <div class="blog-header">
+            <h2 class="section-title mb-4">Latest Articles</h2>
+            <p class="blog-description">Insights on software development, Elixir, and building better web applications</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        {{ range .Paginator.Pages }}
         {{ .Render "post" }}
         {{ end }}
       </div>
+      
+      <!-- Pagination -->
+      {{ if gt .Paginator.TotalPages 1 }}
+      <div class="row">
+        <div class="col-12">
+          <nav class="blog-pagination" aria-label="Blog pagination">
+            <ul class="pagination justify-content-center">
+              {{ if .Paginator.HasPrev }}
+              <li class="page-item">
+                <a class="page-link" href="{{ .Paginator.Prev.URL }}" aria-label="Previous">
+                  <span aria-hidden="true">&laquo; Previous</span>
+                </a>
+              </li>
+              {{ end }}
+              
+              {{ range .Paginator.Pagers }}
+              {{ if eq . $.Paginator }}
+              <li class="page-item active">
+                <span class="page-link">{{ .PageNumber }}</span>
+              </li>
+              {{ else }}
+              <li class="page-item">
+                <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+              </li>
+              {{ end }}
+              {{ end }}
+              
+              {{ if .Paginator.HasNext }}
+              <li class="page-item">
+                <a class="page-link" href="{{ .Paginator.Next.URL }}" aria-label="Next">
+                  <span aria-hidden="true">Next &raquo;</span>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </nav>
+        </div>
+      </div>
+      {{ end }}
     </div>
   </section>
   <!-- /blog -->

@@ -1,27 +1,56 @@
 <script type="application/ld+json">
-[{
+[
+{{ if .IsHome }}
+{
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": {{ .Site.Title }},
-    "url": {{ .Section | absURL }},
-    "sameAs": []
-    {{ if and .IsHome .Site.Data.homepage.testimonial.enable }}
-    , "review": [
+    "name": "{{ .Site.Params.business_name }}",
+    "legalName": "{{ .Site.Params.business_name }}",
+    "url": "{{ .Site.BaseURL }}",
+    "logo": "{{ .Site.Params.logo | absURL }}",
+    "foundingDate": "{{ .Site.Params.founding_year }}",
+    "description": "{{ .Site.Params.description }}",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lake Forest",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "{{ .Site.Params.phone }}",
+        "contactType": "customer service",
+        "email": "{{ .Site.Params.email }}",
+        "availableLanguage": ["English"]
+    },
+    "sameAs": [
+        {{ range $index, $social := .Site.Params.social }}{{ if ne $social.URL "#" }}{{ if $index }},{{ end }}"{{ $social.URL }}"{{ end }}{{ end }}
+    ],
+    "areaServed": {{ .Site.Params.service_areas | jsonify }},
+    "serviceType": [
+        "Custom Software Development",
+        "AI Solutions",
+        "Full-Stack Web Development",
+        "Backend Architecture",
+        "Accessibility Compliance"
+    ]
+    {{ if and .Site.Data.homepage.testimonial.enable }}
+    ,
+    "review": [
     {{ with .Site.Data.homepage.testimonial }}
     {{ range $index, $e := .item }}
-        {{ if $index }}, {{ end }}{
+        {{ if $index }},{{ end }}{
         "@type": "Review",
         "author": {
             "@type": "Person",
-            "name": {{.name }},
-            "image": {{.image }}
+            "name": "{{ .name }}"
         },
-        "reviewBody": {{.content }},
-        "name": {{.job_summary }},
+        "reviewBody": "{{ .content | plainify }}",
+        "name": "{{ .job_summary }}",
         "reviewRating": {
             "@type": "Rating",
             "bestRating": "5",
-            "ratingValue": {{.rating_of_five }},
+            "ratingValue": "{{ .rating_of_five }}",
             "worstRating": "1"
         }
         }
@@ -29,32 +58,74 @@
     {{ end }}
     ]
     {{ end }}
-    }
-{{ if eq .Section "blog" }}
-,{
+}
+,
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{ .Site.Params.business_name }}",
+    "description": "{{ .Site.Params.description }}",
+    "url": "{{ .Site.BaseURL }}",
+    "telephone": "{{ .Site.Params.phone }}",
+    "email": "{{ .Site.Params.email }}",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ .Site.Params.address }}",
+        "addressLocality": "Lake Forest",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "33.6470",
+        "longitude": "-117.6892"
+    },
+    "openingHours": "Mo-Fr 09:00-17:00",
+    "priceRange": "$$",
+    "paymentAccepted": ["Credit Card", "Bank Transfer", "Check"],
+    "currenciesAccepted": "USD"
+}
+{{ else if eq .Section "blog" }}
+{
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": {{ .Title }},
-    "image": {{ .Params.featuredImage | absURL }},
-    "datePublished": {{ .PublishDate }},
-    "dateModified": {{ .Lastmod }},
+    "headline": "{{ .Title }}",
+    {{ if .Params.image }}"image": "{{ .Params.image | absURL }}",{{ end }}
+    "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
     "author": {
         "@type": "Person",
-        "name": {{ .Site.Params.author }},
-        "url": {{ "about" | absURL }}
+        "name": "{{ .Site.Params.author }}",
+        "url": "{{ "about" | absURL }}"
     },
-    "mainEntityOfPage": { "@type": "WebPage" },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+    },
     "publisher": {
         "@type": "Organization",
-        "name": {{ .Site.Title }},
+        "name": "{{ .Site.Params.business_name }}",
         "logo": {
-        "@type": "ImageObject",
-        "url": {{ .Site.Params.logo }}
+            "@type": "ImageObject",
+            "url": "{{ .Site.Params.logo | absURL }}"
         }
     },
-    "description": {{ .Description | plainify | safeHTML }},
-    "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
+    "description": "{{ with .Summary }}{{ . | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+    {{ if .Params.tags }}"keywords": {{ .Params.tags | jsonify }}{{ end }}
+}
+{{ else }}
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "{{ .Title }}",
+    "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+    "url": "{{ .Permalink }}",
+    "mainEntity": {
+        "@type": "Organization",
+        "name": "{{ .Site.Params.business_name }}",
+        "url": "{{ .Site.BaseURL }}"
     }
+}
 {{ end }}
 ]
 </script>

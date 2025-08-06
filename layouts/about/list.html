@@ -22,16 +22,11 @@
 <!-- about -->
 <section class="section pt-5">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        {{ .Content }}
-      </div>
-      <div class="col-md-4 text-center drag-lg-top">
-        <div class="shadow-down mb-4">
-          <img src="{{.Params.author_image | absURL }}" alt="author"
-            class="img-fluid w-100 rounded-lg border-thick border-white">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8">
+        <div class="about-content">
+          {{ .Content }}
         </div>
-        <h4>{{ .Params.author_image_description }}</h4>
       </div>
     </div>
   </div>
