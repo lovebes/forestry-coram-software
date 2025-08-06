@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://coramsoftware.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 1
+
+# Block certain directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/

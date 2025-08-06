@@ -1,12 +1,85 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ .Site.Title }}</title>
+  
+  <!-- SEO Optimized Title Tags -->
+  {{ if .IsHome }}
+    <title>{{ .Site.Params.business_name }} - Custom Software Development &amp; AI Solutions in California</title>
+  {{ else if eq .Type "about" }}
+    <title>About {{ .Site.Params.business_name }} - Expert Software Development Team</title>
+  {{ else if eq .Section "blog" }}
+    {{ if .IsSection }}
+      <title>Software Development Blog - {{ .Site.Params.business_name }}</title>
+    {{ else }}
+      <title>{{ .Title }} - {{ .Site.Params.business_name }} Blog</title>
+    {{ end }}
+  {{ else }}
+    <title>{{ .Title }} - {{ .Site.Params.business_name }}</title>
+  {{ end }}
 
-  {{ "<!-- mobile responsive meta -->" | safeHTML }}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  <!-- Mobile Responsive Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  <!-- SEO Meta Descriptions -->
+  {{ if .IsHome }}
+    <meta name="description" content="Coram Software delivers custom software development, AI solutions, and full-stack web applications. Expert Elixir, React, Go developers serving California businesses with modern, scalable technology solutions.">
+  {{ else if eq .Type "about" }}
+    <meta name="description" content="Learn about Coram Software's expert development team. We create custom software solutions, AI implementations, and modern web applications for businesses across California and nationwide.">
+  {{ else if eq .Section "blog" }}
+    {{ if .IsSection }}
+      <meta name="description" content="Latest insights on software development, Elixir programming, AI integration, and modern web technologies from the Coram Software development team.">
+    {{ else }}
+      <meta name="description" content="{{ with .Summary }}{{ . | plainify | truncate 155 }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ end }}
+  {{ else }}
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 155 }}{{ end }}">
+  {{ end }}
+
+  <!-- SEO Keywords -->
+  {{ if .IsHome }}
+    <meta name="keywords" content="software development, custom software, AI solutions, Elixir development, React development, Go programming, web applications, California software company, full-stack development">
+  {{ else if eq .Type "about" }}
+    <meta name="keywords" content="software development team, custom software experts, AI implementation, web development company California, Elixir experts, React developers">
+  {{ else if .Params.tags }}
+    <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
+  {{ end }}
+
+  <!-- Author and Company -->
+  <meta name="author" content="{{ .Site.Params.business_name }}">
+  <meta name="company" content="{{ .Site.Params.business_name }}">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ .Permalink }}">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Params.business_name }} - Custom Software Development &amp; AI Solutions{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description" content="{{ if .IsHome }}Expert software development company creating custom solutions, AI implementations, and modern web applications for businesses.{{ else }}{{ with .Summary }}{{ . | plainify | truncate 155 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Params.business_name }}">
+  <meta property="og:locale" content="en_US">
+  {{ if .Params.image }}
+    <meta property="og:image" content="{{ .Params.image | absURL }}">
+  {{ else }}
+    <meta property="og:image" content="{{ "images/logo.svg" | absURL }}">
+  {{ end }}
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.business_name }} - Custom Software Development{{ else }}{{ .Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ if .IsHome }}Expert software development company creating custom solutions and AI implementations.{{ else }}{{ with .Summary }}{{ . | plainify | truncate 155 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+  {{ if .Params.image }}
+    <meta name="twitter:image" content="{{ .Params.image | absURL }}">
+  {{ else }}
+    <meta name="twitter:image" content="{{ "images/logo.svg" | absURL }}">
+  {{ end }}
+
+  <!-- Additional SEO Meta -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  {{ if .IsHome }}
+    <meta name="google-site-verification" content="">
+  {{ end }}
+  
   {{ hugo.Generator }}
 
   <style>

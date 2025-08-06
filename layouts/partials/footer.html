@@ -1,59 +1,66 @@
-{{ if .Site.Params.contact.enable }}
-<!-- contact -->
-<section class="section section-on-footer" data-background="{{`images/backgrounds/bg-dots.png` | absURL}}">
+<!-- footer -->
+<footer class="modern-footer bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="{{.Site.Params.contact.form_action}}" method="POST" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here"></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-brand">
+          <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Params.business_name }}" class="footer-logo mb-3">
+          <p class="footer-description">Creating custom software solutions and AI implementations that drive business success.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- /contact -->
-{{ end }}
-
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.email}}</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.phone}}</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.address}}</p>
+      
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6 class="footer-title">Services</h6>
+        <ul class="footer-links">
+          <li><a href="/about/#ai-solutions">AI Solutions</a></li>
+          <li><a href="/about/#full-stack">Full-Stack Dev</a></li>
+          <li><a href="/about/#accessibility">Accessibility</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6 class="footer-title">Company</h6>
+        <ul class="footer-links">
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h6 class="footer-title">Get In Touch</h6>
+        <div class="footer-contact">
+          <div class="contact-item">
+            <i class="ti-email"></i>
+            <a href="mailto:{{.Site.Params.email}}">{{.Site.Params.email}}</a>
+          </div>
+          <div class="contact-item">
+            <i class="ti-location-pin"></i>
+            <span>{{.Site.Params.address}}</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">{{ .Site.Params.copyright | markdownify }}</p>
+    
+    <div class="footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="copyright-text">{{ .Site.Params.copyright | markdownify }}</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="footer-social">
+            {{ range .Site.Params.social }}
+            {{ if ne .URL "#" }}
+            <a href="{{ .URL | safeURL }}" class="social-link" aria-label="Social media link">
+              <i class="{{ .icon }}"></i>
+            </a>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 <!-- /footer -->

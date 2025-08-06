@@ -1,12 +1,12 @@
 +++
-date = 2025-01-18T07:00:00Z
+date = 2025-02-24T07:00:00Z
 description = "Time Series Data #2 - Aggregation"
 image = "/images/elixir_logo.jpeg"
 title = "[Elixir and Time Series] #2 - Aggregation, or doing stuff with ingested data"
 
 +++
 
-Still in process of writing this blog post, but just throwing out what I want to write for now..
+How we aggregate time series data
 
 ### Outline
 
