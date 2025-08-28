@@ -7,7 +7,7 @@ keywords: ["software development team", "custom software experts", "AI implement
 
 ## Software That Works, Crafted "In Your Presence"
 
-Hello, my name is Seungjin Kim, and owner of Coram Software. At Coram Software, we believe technology should solve real problems, not create new ones. Our name comes from the Latin word "Coram," meaning "in your presence" – reflecting our commitment to being truly present with our clients throughout their digital transformation journey.
+Hello, my name is Seungjin Kim, owner of Coram Software. At Coram Software, we believe technology should solve real problems, not create new ones. Our name comes from the Latin word "Coram," meaning "in your presence" – reflecting our commitment to being truly present with our clients throughout their digital transformation journey.
 
 ![Software development team collaborating on custom solutions at Coram Software](/images/about/team-collaboration.jpg "Expert software development team working together")
 
