@@ -1,26 +1,181 @@
 {{ define "main" }}
 
-<!-- page title -->
-<section class="page-title-alt bg-primary position-relative overflow-hidden">
+<!-- Include Tailwind CSS directly -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#3b82f6',
+                    secondary: '#1e40af'
+                }
+            }
+        }
+    }
+</script>
+
+<!-- Hero Section - Direct from V0 -->
+<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            <span class="text-primary">AI Solutions</span> That Work For Your Business
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Help your small business harness the power of AI without the complexity.
+            We make advanced technology simple and accessible.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
+                Get Started Today
+            </a>
+            <a href="#services" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200">
+                Learn More
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-white">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1 class="text-white font-tertiary">{{ .Title }}</h1>
+      <div class="col-12 pt-8">
+        <h2 class="display-4 fw-bold text-center mb-5 text-dark">Our AI Services</h2>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Content Creation -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 48px; height: 48px; background: rgba(0,123,255,0.1);">
+              <i class="fas fa-edit text-primary" style="font-size: 24px;"></i>
+            </div>
+            <h3 class="h5 fw-semibold mb-3 text-dark">Content Creation</h3>
+            <p class="text-muted">Generate high-quality blog posts, social media content, and marketing materials that engage your audience and drive results.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digital Products -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 48px; height: 48px; background: rgba(0,123,255,0.1);">
+              <i class="fas fa-mobile-alt text-primary" style="font-size: 24px;"></i>
+            </div>
+            <h3 class="h5 fw-semibold mb-3 text-dark">Digital Products</h3>
+            <p class="text-muted">Create digital courses, ebooks, and online resources that provide value to your customers and generate passive income.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Automation -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 48px; height: 48px; background: rgba(0,123,255,0.1);">
+              <i class="fas fa-cogs text-primary" style="font-size: 24px;"></i>
+            </div>
+            <h3 class="h5 fw-semibold mb-3 text-dark">Technical Automation</h3>
+            <p class="text-muted">Streamline your workflows with custom automation solutions that save time and reduce manual errors in your business processes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Processing -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 48px; height: 48px; background: rgba(0,123,255,0.1);">
+              <i class="fas fa-chart-bar text-primary" style="font-size: 24px;"></i>
+            </div>
+            <h3 class="h5 fw-semibold mb-3 text-dark">Data Processing</h3>
+            <p class="text-muted">Transform raw data into actionable insights with AI-powered analytics that help you make informed business decisions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Automation -->
+      <div class="col-12 col-md-6 col-lg-4 col-xl-4 offset-xl-2">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 48px; height: 48px; background: rgba(0,123,255,0.1);">
+              <i class="fas fa-file-alt text-primary" style="font-size: 24px;"></i>
+            </div>
+            <h3 class="h5 fw-semibold mb-3 text-dark">Admin Automation</h3>
+            <p class="text-muted">Automate routine administrative tasks like scheduling, invoicing, and customer communications to focus on growing your business.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <!-- background shapes -->
-  <img src="{{`images/illustrations/page-title.png`| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="{{`images/illustrations/dots-group-sm.svg`| relURL}}" alt="illustrations" class="bg-shape-2">
-  <img src="{{`images/illustrations/leaf-yellow.svg`| relURL}}" alt="illustrations" class="bg-shape-3">
-  <img src="{{`images/illustrations/leaf-orange.svg`| relURL}}" alt="illustrations" class="bg-shape-4">
-  <img src="{{`images/illustrations/dots-group-cyan.svg`| relURL}}" alt="illustrations" class="bg-shape-5">
-  <img src="{{`images/illustrations/leaf-cyan-lg.svg`| relURL}}" alt="illustrations" class="bg-shape-6">
 </section>
-<!-- /page title -->
 
-<!-- AI services content -->
-<section class="section pt-5">
+<!-- Call to Action Section -->
+<section class="py-5 text-white" style="background: linear-gradient(135deg, #007bff, #0056b3);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 text-center">
+        <h2 class="display-4 fw-bold mb-5 text-white">Ready to Transform Your Business with AI?</h2>
+
+        <div class="row g-4 mb-5">
+          <!-- Free Consultation -->
+          <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mb-3"
+                   style="width: 64px; height: 64px; background: rgba(255,255,255,0.2);">
+                <i class="fas fa-comments text-white" style="font-size: 32px;"></i>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">Free Consultation</h3>
+              <p class="text-white-50">Get expert advice tailored to your business needs at no cost</p>
+            </div>
+          </div>
+
+          <!-- Developer Advantage -->
+          <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mb-3"
+                   style="width: 64px; height: 64px; background: rgba(255,255,255,0.2);">
+                <i class="fas fa-code text-white" style="font-size: 32px;"></i>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">Developer Advantage</h3>
+              <p class="text-white-50">Built by developers who understand both AI and business needs</p>
+            </div>
+          </div>
+
+          <!-- No Dependencies -->
+          <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mb-3"
+                   style="width: 64px; height: 64px; background: rgba(255,255,255,0.2);">
+                <i class="fas fa-shield-alt text-white" style="font-size: 32px;"></i>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">No Dependencies</h3>
+              <p class="text-white-50">Complete solutions that work independently without complex integrations</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="/contact" class="btn btn-light btn-lg px-5 py-3 fw-semibold text-primary"
+           style="transition: all 0.2s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
+           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'">
+          Schedule Free Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Detailed AI services content -->
+<section class="section pt-5 bg-light">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-9">
@@ -31,6 +186,6 @@
     </div>
   </div>
 </section>
-<!-- /AI services content -->
+<!-- /Detailed AI services content -->
 
 {{ end }}
