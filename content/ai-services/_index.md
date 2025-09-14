@@ -11,6 +11,10 @@ layout: "list"
 
 At Coram Software, we help small businesses harness the power of AI without the complexity. Our custom AI services are designed to solve real business challenges, from content creation to workflow automation, giving you the competitive edge you need to thrive.
 
+<div class="text-center my-5">
+{{< svg "ai-content-workflow.svg" >}}
+</div>
+
 ### 1. AI Content Creation Services
 
 **Social Media Content Generation**
@@ -56,6 +60,10 @@ Streamline your digital product creation with AI-powered design workflows:
 **Workflow Automation Setup**
 
 Leverage our development expertise to create AI-powered business automation:
+
+<div class="text-center my-4">
+{{< svg "ai-automation-workflow.svg" >}}
+</div>
 
 - Build custom automation workflows using Make.com, Zapier, and other platforms
 - Set up voice-to-text workflows that trigger automated business tasks

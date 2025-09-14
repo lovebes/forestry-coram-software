@@ -1,0 +1,9 @@
+{{ $svgFile := index .Params 0 }}
+{{ $svgPath := printf "static/images/%s" $svgFile }}
+{{ if fileExists $svgPath }}
+  {{ readFile $svgPath | safeHTML }}
+{{ else }}
+  <div class="svg-error" style="color: red; padding: 10px; border: 1px solid red;">
+    SVG file not found: {{ $svgFile }}
+  </div>
+{{ end }}

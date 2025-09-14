@@ -63,7 +63,7 @@
   <!-- Output Actions -->
   <text x="570" y="65" class="step" font-weight="bold">Automated Actions</text>
   <rect x="520" y="80" width="120" height="35" class="box"/>
-  <text x="580" y="102" text-anchor="middle" class="step">Send Personalized Emails</text>
+  <text x="580" y="102" text-anchor="middle" class="step">Personalized Emails</text>
   
   <rect x="520" y="125" width="120" height="35" class="box"/>
   <text x="580" y="147" text-anchor="middle" class="step">Create Social Posts</text>
