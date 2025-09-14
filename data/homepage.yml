@@ -3,7 +3,7 @@ banner:
   title: Custom Software Development <br> &amp; AI Solutions in California
 about:
   enable: true
-  content: We create software that "just works" for end users, while producing clean code and architecture. From AI solutions to full-stack development and accessibility compliance, we bring joy to the development process using modern technologies like Elixir, Go, and React.
+  content: We create software that "just works" for end users, while producing clean code and architecture. From AI solutions to full-stack development, we bring joy to the development process using modern technologies like Elixir, Go, and React.
   button:
     enable: true
     label: know more
@@ -21,9 +21,6 @@ skill:
   - title: Backend Development
     progress: 90%
     color: "#bdecf6"
-  - title: White-glove Web Accessibility Compliance Work
-    progress: 100%
-    color: "#ffbcaa"
 experience:
   enable: false
   title: Experience
@@ -64,16 +61,18 @@ service:
       icon : "ti-bolt"
       content : "Future-proof your business by integrating with customized advanced LLM models. Leveraging open source expertise, we provide transparent and flexible solutions tailored to your unique needs. Our holistic approach ensures that your business can utilize the full potential of AI technology."
       highlighted : true
-
+      URL : "ai-services"
+    
     - title : "Fullstack/ Backend Development"
       icon : "ti-server"
       content : "We can team up with your existing development team to augment or build out the backend architecture using Golang / Python / .Net Core / Elixir languages. We specialize in creating cloud-based, microservices architecture to be reliable, maintainable, and scalable, with focus on practical, iterated approaches."
       highlighted : false
 
-    - title : "Accessibility Certification"
-      icon : "ti-thumb-up"
-      content : "We excel at providing in-depth analysis of your websites, and can fully take the load off your development team by taking the white-glove approach in handling all tasks Accessibility related to meet government requirements, such as CMA 508 Compliance."
-      highlighted : false
+    - title : "AI Code Remediation"
+      icon : "ti-settings"
+      content : "Turn your AI-generated prototype into professional, business-ready software. We specialize in optimizing performance, fixing security vulnerabilities, and transforming technical debt into scalable solutions that grow with your business."
+      highlighted : true
+      URL : "ai-code-remediation"
 portfolio:
   enable: true
   title: Portfolio

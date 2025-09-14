@@ -17,9 +17,8 @@ We specialize in creating custom software solutions that seamlessly integrate in
 
 **Our Core Services:**
 - **Custom AI Solutions** – Future-proof your business with tailored AI implementations
+- **AI Code Remediation** – Transform AI-generated prototypes into professional software
 - **Full-Stack Development** – Modern web applications using cutting-edge technologies
-- **Backend Architecture** – Scalable, maintainable systems built for growth
-- **Accessibility Compliance** – Ensuring your software meets all regulatory requirements
 
 ### Our Approach
 

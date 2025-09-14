@@ -1,0 +1,67 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #41228e; }
+      .step { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+      .box { fill: #f8f9ff; stroke: #41228e; stroke-width: 2; rx: 8; }
+      .arrow { stroke: #41228e; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#41228e" />
+    </marker>
+  </defs>
+  
+  <text x="300" y="25" text-anchor="middle" class="title">AI Content Creation Workflow</text>
+  
+  <!-- Step 1: Business Analysis -->
+  <rect x="50" y="60" width="120" height="60" class="box"/>
+  <text x="110" y="85" text-anchor="middle" class="step">Business Analysis</text>
+  <text x="110" y="105" text-anchor="middle" class="step">& Requirements</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="170" y1="90" x2="200" y2="90" class="arrow"/>
+  
+  <!-- Step 2: AI Setup -->
+  <rect x="220" y="60" width="120" height="60" class="box"/>
+  <text x="280" y="85" text-anchor="middle" class="step">AI Tool Setup</text>
+  <text x="280" y="105" text-anchor="middle" class="step">& Configuration</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="340" y1="90" x2="370" y2="90" class="arrow"/>
+  
+  <!-- Step 3: Template Creation -->
+  <rect x="390" y="60" width="120" height="60" class="box"/>
+  <text x="450" y="85" text-anchor="middle" class="step">Template &</text>
+  <text x="450" y="105" text-anchor="middle" class="step">Workflow Creation</text>
+  
+  <!-- Arrow down -->
+  <line x1="450" y1="120" x2="450" y2="150" class="arrow"/>
+  
+  <!-- Step 4: Training -->
+  <rect x="390" y="170" width="120" height="60" class="box"/>
+  <text x="450" y="195" text-anchor="middle" class="step">Team Training</text>
+  <text x="450" y="215" text-anchor="middle" class="step">& Documentation</text>
+  
+  <!-- Arrow left -->
+  <line x1="390" y1="200" x2="360" y2="200" class="arrow"/>
+  
+  <!-- Step 5: Content Generation -->
+  <rect x="220" y="170" width="120" height="60" class="box"/>
+  <text x="280" y="195" text-anchor="middle" class="step">Automated</text>
+  <text x="280" y="215" text-anchor="middle" class="step">Content Generation</text>
+  
+  <!-- Arrow left -->
+  <line x1="220" y1="200" x2="190" y2="200" class="arrow"/>
+  
+  <!-- Step 6: Quality Control -->
+  <rect x="50" y="170" width="120" height="60" class="box"/>
+  <text x="110" y="195" text-anchor="middle" class="step">Quality Control</text>
+  <text x="110" y="215" text-anchor="middle" class="step">& Publishing</text>
+  
+  <!-- Success metrics -->
+  <rect x="200" y="280" width="200" height="80" class="box" fill="#e8f5e8" stroke="#28a745"/>
+  <text x="300" y="305" text-anchor="middle" class="step" fill="#28a745" font-weight="bold">Results</text>
+  <text x="300" y="325" text-anchor="middle" class="step">• 80% time savings</text>
+  <text x="300" y="340" text-anchor="middle" class="step">• Consistent brand voice</text>
+  <text x="300" y="355" text-anchor="middle" class="step">• Daily content pipeline</text>
+</svg>

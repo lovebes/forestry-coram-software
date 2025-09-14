@@ -8,83 +8,41 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="contact-content text-center mb-5">
-            <h2 class="mb-4">Ready to Start Your Project?</h2>
-            <p class="lead">Let's discuss how we can help transform your business with custom software solutions.</p>
+            <h2 class="mb-4">Let's Talk About Your Project</h2>
+            <p class="lead">I'm very available to listen and discuss how we can work together. Just send me an email with whatever information you'd like to share.</p>
           </div>
         </div>
       </div>
       
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="contact-form-wrapper">
-            <form class="contact-form" action="mailto:{{ .Site.Params.email }}" method="post" enctype="text/plain">
-              <div class="row">
-                <div class="col-md-6 mb-4">
-                  <label for="name" class="form-label">Full Name *</label>
-                  <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <label for="email" class="form-label">Email Address *</label>
-                  <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <label for="company" class="form-label">Company</label>
-                  <input type="text" id="company" name="company" class="form-control">
-                </div>
-                <div class="col-md-6 mb-4">
-                  <label for="budget" class="form-label">Project Budget</label>
-                  <select id="budget" name="budget" class="form-control">
-                    <option value="">Select range</option>
-                    <option value="under-25k">Under $25,000</option>
-                    <option value="25k-50k">$25,000 - $50,000</option>
-                    <option value="50k-100k">$50,000 - $100,000</option>
-                    <option value="100k-plus">$100,000+</option>
-                  </select>
-                </div>
-                <div class="col-12 mb-4">
-                  <label for="project-type" class="form-label">Project Type</label>
-                  <select id="project-type" name="project-type" class="form-control">
-                    <option value="">Select service</option>
-                    <option value="ai-solutions">AI Solutions</option>
-                    <option value="full-stack-development">Full-Stack Development</option>
-                    <option value="backend-architecture">Backend Architecture</option>
-                    <option value="accessibility-compliance">Accessibility Compliance</option>
-                    <option value="consultation">Consultation</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="col-12 mb-4">
-                  <label for="message" class="form-label">Project Details *</label>
-                  <textarea id="message" name="message" rows="6" class="form-control" placeholder="Tell us about your project, timeline, and specific requirements..." required></textarea>
-                </div>
-                <div class="col-12 text-center">
-                  <button type="submit" class="btn btn-primary btn-lg">Send Project Inquiry</button>
-                  <p class="form-note mt-3">We'll respond within 24 hours with next steps.</p>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      
-      <!-- contact info cards -->
-      <div class="row mt-5 justify-content-center">
-        <div class="col-md-4 col-lg-3 mb-4">
-          <div class="contact-info-card text-center">
-            <div class="contact-icon">
-              <i class="ti-email"></i>
+          <div class="bg-light rounded p-5 text-center">
+            <h3 class="mb-4">
+              <a href="mailto:{{ .Site.Params.email }}" class="text-primary">{{ .Site.Params.email }}</a>
+            </h3>
+            <p class="mb-4">Send any inquiry email - I'm here to help and would love to hear from you.</p>
+            
+            <div class="text-left" style="max-width: 600px; margin: 0 auto;">
+              <p class="mb-3"><strong>You might want to include:</strong></p>
+              <ul class="list-unstyled">
+                <li class="mb-2">• Your name and how you prefer to be contacted</li>
+                <li class="mb-2">• A bit about your company or project</li>
+                <li class="mb-2">• What kind of help you're looking for (AI solutions, code remediation, development, etc.)</li>
+                <li class="mb-2">• Any timeline you have in mind</li>
+                <li class="mb-2">• Your budget range, if you have one</li>
+                <li class="mb-2">• Or simply what's on your mind - I'm happy to start a conversation</li>
+              </ul>
+              
+              <p class="mt-4 text-center text-muted">
+                But really, don't worry about having all the details figured out. <br>
+                Sometimes the best projects start with just "I have this idea..."
+              </p>
             </div>
-            <h5>Email Us</h5>
-            <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 mb-4">
-          <div class="contact-info-card text-center">
-            <div class="contact-icon">
-              <i class="ti-location-pin"></i>
+            
+            <div class="mt-5">
+              <a href="mailto:{{ .Site.Params.email }}" class="btn btn-primary btn-lg">Send Me an Email</a>
+              <p class="form-note mt-3">I typically respond within 24 hours</p>
             </div>
-            <h5>Visit Us</h5>
-            <p>{{ .Site.Params.address }}</p>
           </div>
         </div>
       </div>

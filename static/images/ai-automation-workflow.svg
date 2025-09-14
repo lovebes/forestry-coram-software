@@ -1,0 +1,91 @@
+<svg width="700" height="450" viewBox="0 0 700 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #41228e; }
+      .step { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+      .box { fill: #f8f9ff; stroke: #41228e; stroke-width: 2; rx: 8; }
+      .arrow { stroke: #41228e; stroke-width: 2; marker-end: url(#arrowhead); }
+      .integration { fill: #fff3cd; stroke: #ffc107; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#41228e" />
+    </marker>
+  </defs>
+  
+  <text x="350" y="25" text-anchor="middle" class="title">AI Automation & Integration Workflow</text>
+  
+  <!-- Input Sources -->
+  <text x="60" y="65" class="step" font-weight="bold">Input Sources</text>
+  <rect x="20" y="80" width="100" height="40" class="integration"/>
+  <text x="70" y="105" text-anchor="middle" class="step">Voice Input</text>
+  
+  <rect x="20" y="130" width="100" height="40" class="integration"/>
+  <text x="70" y="155" text-anchor="middle" class="step">Documents</text>
+  
+  <rect x="20" y="180" width="100" height="40" class="integration"/>
+  <text x="70" y="205" text-anchor="middle" class="step">Email/Forms</text>
+  
+  <!-- AI Processing -->
+  <text x="220" y="65" class="step" font-weight="bold">AI Processing</text>
+  <rect x="170" y="80" width="120" height="140" class="box"/>
+  <text x="230" y="105" text-anchor="middle" class="step">Natural Language</text>
+  <text x="230" y="120" text-anchor="middle" class="step">Processing</text>
+  <text x="230" y="145" text-anchor="middle" class="step">Data Extraction</text>
+  <text x="230" y="165" text-anchor="middle" class="step">Pattern Recognition</text>
+  <text x="230" y="185" text-anchor="middle" class="step">Content Generation</text>
+  <text x="230" y="205" text-anchor="middle" class="step">Decision Logic</text>
+  
+  <!-- Arrows from inputs to AI -->
+  <line x1="120" y1="100" x2="170" y2="120" class="arrow"/>
+  <line x1="120" y1="150" x2="170" y2="150" class="arrow"/>
+  <line x1="120" y1="200" x2="170" y2="180" class="arrow"/>
+  
+  <!-- Business Systems -->
+  <text x="420" y="65" class="step" font-weight="bold">Business Systems</text>
+  <rect x="350" y="80" width="110" height="35" class="integration"/>
+  <text x="405" y="102" text-anchor="middle" class="step">CRM (Airtable)</text>
+  
+  <rect x="350" y="125" width="110" height="35" class="integration"/>
+  <text x="405" y="147" text-anchor="middle" class="step">Email Marketing</text>
+  
+  <rect x="350" y="170" width="110" height="35" class="integration"/>
+  <text x="405" y="192" text-anchor="middle" class="step">Social Media</text>
+  
+  <rect x="350" y="215" width="110" height="35" class="integration"/>
+  <text x="405" y="237" text-anchor="middle" class="step">Document Mgmt</text>
+  
+  <!-- Arrows from AI to systems -->
+  <line x1="290" y1="120" x2="350" y2="97" class="arrow"/>
+  <line x1="290" y1="140" x2="350" y2="142" class="arrow"/>
+  <line x1="290" y1="160" x2="350" y2="187" class="arrow"/>
+  <line x1="290" y1="180" x2="350" y2="232" class="arrow"/>
+  
+  <!-- Output Actions -->
+  <text x="570" y="65" class="step" font-weight="bold">Automated Actions</text>
+  <rect x="520" y="80" width="120" height="35" class="box"/>
+  <text x="580" y="102" text-anchor="middle" class="step">Send Personalized Emails</text>
+  
+  <rect x="520" y="125" width="120" height="35" class="box"/>
+  <text x="580" y="147" text-anchor="middle" class="step">Create Social Posts</text>
+  
+  <rect x="520" y="170" width="120" height="35" class="box"/>
+  <text x="580" y="192" text-anchor="middle" class="step">Generate Reports</text>
+  
+  <rect x="520" y="215" width="120" height="35" class="box"/>
+  <text x="580" y="237" text-anchor="middle" class="step">Update Databases</text>
+  
+  <!-- Arrows from systems to actions -->
+  <line x1="460" y1="97" x2="520" y2="97" class="arrow"/>
+  <line x1="460" y1="142" x2="520" y2="142" class="arrow"/>
+  <line x1="460" y1="187" x2="520" y2="187" class="arrow"/>
+  <line x1="460" y1="232" x2="520" y2="232" class="arrow"/>
+  
+  <!-- Benefits -->
+  <rect x="200" y="300" width="300" height="120" class="box" fill="#e8f5e8" stroke="#28a745"/>
+  <text x="350" y="325" text-anchor="middle" class="step" fill="#28a745" font-weight="bold">Business Benefits</text>
+  <text x="350" y="345" text-anchor="middle" class="step">• 90% reduction in manual data entry</text>
+  <text x="350" y="360" text-anchor="middle" class="step">• 24/7 automated customer responses</text>
+  <text x="350" y="375" text-anchor="middle" class="step">• Consistent multi-channel messaging</text>
+  <text x="350" y="390" text-anchor="middle" class="step">• Real-time business intelligence</text>
+  <text x="350" y="405" text-anchor="middle" class="step">• Scalable without additional staff</text>
+</svg>
