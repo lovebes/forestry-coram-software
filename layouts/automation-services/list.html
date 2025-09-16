@@ -1,0 +1,304 @@
+{{ define "main" }}
+
+<!-- Include Tailwind CSS directly -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#3b82f6',
+                    secondary: '#1e40af'
+                }
+            }
+        }
+    }
+</script>
+
+<!-- Hero Section - Direct from V0 -->
+<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            Join The <span class="text-primary">40% of Businesses</span> Already Automating
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Transform repetitive tasks into automated workflows.
+            Save time, reduce errors, and scale your business effortlessly.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
+                Get Your Free Automation Audit
+            </a>
+            <a href="#automation-stats" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200">
+                See The Data
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Automation Stats Section -->
+<section id="automation-stats" class="py-5 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pt-8">
+        <h2 class="display-4 fw-bold text-center mb-5 text-dark">The Automation Advantage</h2>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Stat 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card border-0 shadow-lg h-100 text-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+          <div class="card-body p-4 text-white">
+            <h2 class="display-3 fw-bold mb-3">40%</h2>
+            <p class="h5 mb-0">of businesses use AI automation daily</p>
+            <small class="d-block mt-2 opacity-75">Up from 20% in 2023</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card border-0 shadow-lg h-100 text-center" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+          <div class="card-body p-4 text-white">
+            <h2 class="display-3 fw-bold mb-3">77%</h2>
+            <p class="h5 mb-0">of tasks fully automated</p>
+            <small class="d-block mt-2 opacity-75">No human intervention needed</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat 3 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card border-0 shadow-lg h-100 text-center" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+          <div class="card-body p-4 text-white">
+            <h2 class="display-3 fw-bold mb-3">97%</h2>
+            <p class="h5 mb-0">efficiency improvement</p>
+            <small class="d-block mt-2 opacity-75">In automated workflows</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat 4 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card border-0 shadow-lg h-100 text-center" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+          <div class="card-body p-4 text-white">
+            <h2 class="display-3 fw-bold mb-3">3x</h2>
+            <p class="h5 mb-0">average ROI</p>
+            <small class="d-block mt-2 opacity-75">In the first year</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Top Automation Areas -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="display-4 fw-bold text-center mb-5 text-dark">Where Smart Businesses Automate</h2>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Development -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 64px; height: 64px; background: rgba(59, 130, 246, 0.1);">
+              <i class="fas fa-code text-primary" style="font-size: 32px;"></i>
+            </div>
+            <h3 class="h4 fw-semibold mb-3 text-dark">Development & Technical</h3>
+            <div class="badge bg-success mb-3">36% of all automation</div>
+            <p class="text-muted">Code generation, testing, documentation, and deployment automation.</p>
+            <ul class="list-unstyled small text-muted mt-3">
+              <li>• 50-70% faster development</li>
+              <li>• 80% fewer bugs</li>
+              <li>• 20+ hours saved weekly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Administrative -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 64px; height: 64px; background: rgba(139, 92, 246, 0.1);">
+              <i class="fas fa-tasks text-primary" style="font-size: 32px;"></i>
+            </div>
+            <h3 class="h4 fw-semibold mb-3 text-dark">Office & Administrative</h3>
+            <div class="badge bg-info mb-3">2nd largest category</div>
+            <p class="text-muted">Document processing, email management, scheduling, and reporting.</p>
+            <ul class="list-unstyled small text-muted mt-3">
+              <li>• 15 hours saved per week</li>
+              <li>• Zero data entry errors</li>
+              <li>• Instant report generation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marketing -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 64px; height: 64px; background: rgba(236, 72, 153, 0.1);">
+              <i class="fas fa-bullhorn text-primary" style="font-size: 32px;"></i>
+            </div>
+            <h3 class="h4 fw-semibold mb-3 text-dark">Marketing & Content</h3>
+            <div class="badge bg-warning text-dark mb-3">4.7% of usage</div>
+            <p class="text-muted">Content creation, SEO optimization, campaign management, and analytics.</p>
+            <ul class="list-unstyled small text-muted mt-3">
+              <li>• 3x content output</li>
+              <li>• 50% less effort</li>
+              <li>• 24/7 campaign optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sales -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 64px; height: 64px; background: rgba(34, 197, 94, 0.1);">
+              <i class="fas fa-chart-line text-primary" style="font-size: 32px;"></i>
+            </div>
+            <h3 class="h4 fw-semibold mb-3 text-dark">Sales & Customer Service</h3>
+            <p class="text-muted">Lead qualification, quote generation, follow-ups, and 24/7 support.</p>
+            <ul class="list-unstyled small text-muted mt-3">
+              <li>• 40% more qualified leads</li>
+              <li>• 60% faster response</li>
+              <li>• 24/7 availability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Processing -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 64px; height: 64px; background: rgba(251, 146, 60, 0.1);">
+              <i class="fas fa-database text-primary" style="font-size: 32px;"></i>
+            </div>
+            <h3 class="h4 fw-semibold mb-3 text-dark">Data & Analytics</h3>
+            <div class="badge bg-danger mb-3">1.9% but critical</div>
+            <p class="text-muted">Automated reporting, predictive analytics, and compliance monitoring.</p>
+            <ul class="list-unstyled small text-muted mt-3">
+              <li>• 5x faster decisions</li>
+              <li>• Real-time insights</li>
+              <li>• Predictive forecasting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Workflows -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border shadow-lg h-100 service-card" style="transition: all 0.3s ease;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-center rounded mb-4"
+                 style="width: 64px; height: 64px; background: rgba(168, 85, 247, 0.1);">
+              <i class="fas fa-cogs text-primary" style="font-size: 32px;"></i>
+            </div>
+            <h3 class="h4 fw-semibold mb-3 text-dark">Custom Workflows</h3>
+            <p class="text-muted">Industry-specific automation tailored to your unique business processes.</p>
+            <ul class="list-unstyled small text-muted mt-3">
+              <li>• Tailored to your needs</li>
+              <li>• Seamless integration</li>
+              <li>• Scalable solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="py-5 text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 text-center">
+        <h2 class="display-4 fw-bold mb-5 text-white">The Automation Gap Is Widening Daily</h2>
+
+        <div class="row g-4 mb-5">
+          <!-- Free Audit -->
+          <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mb-3"
+                   style="width: 64px; height: 64px; background: rgba(255,255,255,0.2);">
+                <i class="fas fa-search text-white" style="font-size: 32px;"></i>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">Free Automation Audit</h3>
+              <p class="text-white-50">Discover your automation potential in 30 minutes</p>
+            </div>
+          </div>
+
+          <!-- Quick Implementation -->
+          <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mb-3"
+                   style="width: 64px; height: 64px; background: rgba(255,255,255,0.2);">
+                <i class="fas fa-rocket text-white" style="font-size: 32px;"></i>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">2-Week Implementation</h3>
+              <p class="text-white-50">See your first automation live in just 14 days</p>
+            </div>
+          </div>
+
+          <!-- ROI Guarantee -->
+          <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mb-3"
+                   style="width: 64px; height: 64px; background: rgba(255,255,255,0.2);">
+                <i class="fas fa-dollar-sign text-white" style="font-size: 32px;"></i>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">60-Day ROI</h3>
+              <p class="text-white-50">Positive return on investment or your money back</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+          <a href="/contact" class="btn btn-light btn-lg px-5 py-3 fw-semibold text-primary"
+             style="transition: all 0.2s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"
+             onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'">
+            Start Automating Today
+          </a>
+          <a href="/ai-code-remediation" class="btn btn-outline-light btn-lg px-5 py-3 fw-semibold"
+             style="transition: all 0.2s ease;"
+             onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'"
+          >
+            Fix Your AI Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Detailed automation content -->
+<section class="section pt-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-9">
+        <div class="automation-services-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Detailed automation content -->
+
+{{ end }}

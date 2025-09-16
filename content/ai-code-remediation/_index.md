@@ -215,3 +215,28 @@ Training your team to work effectively with AI-generated code:
 We're currently documenting success stories from recent AI code remediation projects. Check back soon to see how we've helped businesses transform their AI prototypes into professional software solutions.
 
 Ready to discuss your AI-generated application? [Contact us](/contact) for a free assessment and discover how we can help you achieve the performance and reliability your business deserves.
+
+---
+
+### Related Services
+
+<div class="row mt-5">
+  <div class="col-md-6 mb-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">🤖 Business Automation</h5>
+        <p class="card-text">Transform your operations with proven automation solutions that deliver immediate ROI.</p>
+        <a href="/automation-services" class="btn btn-primary">Explore Automation →</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 mb-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">💡 Custom AI Solutions</h5>
+        <p class="card-text">Harness the power of AI for content creation, data processing, and more.</p>
+        <a href="/ai-services" class="btn btn-primary">View AI Services →</a>
+      </div>
+    </div>
+  </div>
+</div>
