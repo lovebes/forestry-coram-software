@@ -6,13 +6,6 @@ title = "Recommended AI Workflow as noted in the recent ThinkingElixir podcast"
 
 +++
 
-## Content goes here
----
-title: "How to Use Claude Code with VSCode for Elixir Development"
-date: 2025-11-18
-description: "A step-by-step guide to integrating Claude Code with Visual Studio Code for Elixir, including setup, workflow, and best practices."
-tags: ["Claude Code", "VSCode", "Elixir", "AI Development"]
----
 
 ## Getting Started: Installing Claude Code in VSCode
 
